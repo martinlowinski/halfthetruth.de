@@ -1,0 +1,26 @@
+--- 
+wordpress_id: 321
+author_login: admin
+layout: post
+comments: []
+
+author: Martin Lowinski
+title: Linux/Unix get-together in Munich (UnFUG)
+published: true
+tags: 
+- linux
+- meetup
+- unfug
+- tum
+- munich
+date: 2010-10-23 23:41:59 +02:00
+categories: 
+- University
+author_email: martin@goldtopf.org
+wordpress_url: http://halfthetruth.de/?p=321
+author_url: http://goldtopf.org
+status: publish
+---
+As you might know, there is <a href="http://unfug.org">UnFUG</a> (Unix Friends and User Group) in Furtwangen, which is basically a LUG for students at the <a href="http://www.hs-furtwangen.de">HFU</a>. UnFUG is a really great so called "Referat" and is organised by students (like me) every semester. But I switched uni and my new university, the <a href="http://in.tum.de">TUM</a>, doesn't have any user groups like this (except the LUGs from Munich). So Mike and I decided to somehow port UnFUG to Munich. We don't have a name yet, but we have a date, a room and a <a href="http://halfthetruth.de/wp-content/uploads/2010/10/linux-unix-get-together.pdf">flyer</a>.
+
+We will have our first meeting on <strong>Wednesday, 3rd November at 7pm in room MI 00.13.009A</strong>, to present the idea and to organise the talks/workshops/etc. for the upcoming semester.

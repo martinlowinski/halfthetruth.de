@@ -1,0 +1,24 @@
+--- 
+wordpress_id: 119
+author_login: admin
+layout: post
+comments: []
+
+author: Martin Lowinski
+title: Vacation (Road Trip)
+published: true
+tags: []
+
+date: 2009-07-19 14:24:48 +02:00
+categories: 
+- Australia
+author_email: martin@goldtopf.org
+wordpress_url: http://halfthetruth.de/2009/07/19/vacation/
+author_url: http://goldtopf.org
+status: publish
+---
+Vor etwa 3 Wochen ging es mit der wohl besten Schnappsidee los in den Urlaub. Mit einem Campervan (fuer eigentlich drei Leute) und einem Kombi (fuer zwei Leute) sind wir (zu siebt) los in Richtung Cairns gefahren. Die erste grosse Huerde war die Strecke nach Sydney, die etwa so lang ist wie von Freiburg nach Berlin. Das ganze dann auch zur Haelfte bei Nacht und bei Nacht ist so gut wie keiner auf dem Highway (wegen den vielen Tieren), nur riesige LKWs die dich mit 110 ueberholen. In Sydney sind wir 2 N&auml;chte in einem Hostel geblieben, haben nat&uuml;rlich die Opera und alles wichtige besucht - Sightseeing pur. Wir hatten tolles Wetter und die ersten Urlaubsgef&uuml;hle. Danach ging es weiter nach Port Macquarie, dort sind wir allerdings sp&auml;t abends angekommen und haben das erste mal auf einem Campingplatz gecampt. Spannend war auch das Abendessen: F&uuml;r 7 Leute in der Campervan-K&uuml;che, nicht ohne aber machbar. Wir haben direkt an der K&uuml;ste gecampt, es war aber noch viel zu kalt um ins Meer zu gehen. Am Tag drauf wieder in aller Fr&uuml;he los gefahren Richtung &ouml;stlichsten Punkt Australiens: Byron Bay. Wieder eine lange Fahrt, kamen abends an und haben eine geraume Zeit gebraucht um ein Schlafplatz zu finden. Schlussendlich sind wir in einem sch&ouml;nen Hostel gelandet in dem sch&auml;tzungsweise 90% Surfer waren. Abends noch andere Urlauber von daheim (Melbourne) getroffen und haben den abend in der Stadt verbracht. Den vormittag waren wir Kanufahren auf dem Meer, war sehr cool (im wahrsten Sinne) und haben Delphine gesehen. Und weiter gings an die Gold Coast, Surfers Paradise um genau zu sein. Ein sch&ouml;ner Strand, richtig Sonne und den ersten Strafzettel - wir hatten keinen Parkschein. In Surfers Paradise waren wir auch, wer h&auml;tte es gedacht, Surfen! Und Surfen also Wellenreiten zu gut deutsch macht richtig richtig Spass, ich wollte garnicht mehr aus dem Wasser.
+Und weiter gings nach Brisbane. Am Airport vorbei, Chela abgeholt (jetzt waren wir zu 8.) und nach langem suchen einen Park mit &ouml;ffentlichen Toiletten gefunden (das erste mal Wildcampen). Achja, Besuch von der Polizei hatten wir auch diesem abend - war aber alles ganz legal, was wir da gemacht haben. Einen Tag haben wir damit verbracht Brisbane anzuschauen und zwei Tage waren wir auf Mortan Island, eine gro&szlig;e Sandinsel vor Brisbane. Campen, Sonne, Schnorcheln, 4WD fahren, Bodysurfen und die Wildniss (samt Moskitos) genie&szlig;en war alles mitinbegriffen.
+Das n&auml;chste Ziel war Noosa Heads, das wohl luxeri&ouml;ste Strandnest &uuml;berhaupt, aber sehr sch&ouml;n: Viel Strand, Wald und Park und wir hatten den perfekten Platz zum campen, direkt am Meer mit &ouml;ffentlichen Toiletten und Duschen (f&uuml;r die M&auml;dels sogar warme Duschen).
+Und weiter ging die Reise, jetzt standen wieder l&auml;ngere Fahrten (~8h) an um nach Cairns zu kommen. Das Fahren an sich war aber dann sehr entspannend, die Landschaft war einfach sch&ouml;n und Queensland hat sich bemerktbar gemacht. Irgendwo am Highway haben wir dann auch einen Campingplatz gefunden. Der lag an einem Fluss wo es angeblich Krokodile geben soll, wir haben aber alle keine gesehen.
+Am 5. July kamen wir dann schlie&szlig;lich abends in Cairns an, haben ein tolles Hostel gefunden und haben den richtigen Urlaub eingel&auml;utet. Das war unser Road Trip..

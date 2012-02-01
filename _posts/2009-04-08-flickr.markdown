@@ -1,0 +1,24 @@
+--- 
+wordpress_id: 106
+author_login: admin
+layout: post
+comments: []
+
+author: Martin Lowinski
+title: Flickr
+published: true
+tags: []
+
+date: 2009-04-08 15:46:07 +02:00
+categories: 
+- Website
+- Australia
+author_email: martin@goldtopf.org
+wordpress_url: http://halfthetruth.de/2009/04/08/flickr/
+author_url: http://goldtopf.org
+status: publish
+---
+Der ein oder andere kennt <a href="http://flickr.com/">Flickr</a> , aber hier noch mal kurz: Flickr ist ein <cite>kommerzielles  Web-Dienstleistungsportal mit Community-Elementen, das es Benutzern  erlaubt, digitale und digitalisierte Bilder mit Kommentaren und Notizen  auf die Website und so anderen Nutzern zur Verf&uuml;gung zu stellen</cite> (Quelle: wikipedia).
+Flickr versorgt diese Homepage mit Bildern, das Problem waren nur immer  die Limits des kostenlosen Accounts. D.h. 100MB pro Monat und insgesamt  200 Bilder, was im sch&ouml;nen Australien schnell mal erreicht ist. Deshalb  habe ich mir nun einen richtigen <a href="http://flickr.com/photos/c0b0lt">Account</a> zugelegt. Etwa 20 Euro f&uuml;r ein Jahr kostet der Spass, aber den Service ist es mir wert.
+
+Jetzt habe ich zwar das Web-Problem gel&ouml;st allerdings ist meine  Platte im Notebook ebenfalls so randvoll, dass ich nicht mal mehr die  Bilder von meiner Kamera r&uuml;berkopieren kann. Aber eins nach dem  anderen..

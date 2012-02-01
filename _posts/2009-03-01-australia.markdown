@@ -1,0 +1,20 @@
+--- 
+wordpress_id: 87
+author_login: admin
+layout: post
+comments: []
+
+author: Martin Lowinski
+title: Australia
+published: true
+tags: []
+
+date: 2009-03-01 11:28:21 +01:00
+categories: 
+- Australia
+author_email: martin@goldtopf.org
+wordpress_url: http://halfthetruth.de/2009/03/01/australia/
+author_url: http://goldtopf.org
+status: publish
+---
+Ab dem 13. Februar werde ich mein Auslandssemester in <a href="http://maps.google.de/maps?f=q&amp;source=s_q&amp;hl=de&amp;geocode=&amp;q=Melbourne&amp;sll=51.151786,10.415039&amp;sspn=20.641509,56.865234&amp;ie=UTF8&amp;z=14&amp;iwloc=addr">Melbourne</a>,  Australien antreten. Aus diesem Grund m&ouml;chte ich auf dieser Seite etwas  mitschreiben, was ich dort so erlebe und wo es mich hinverschl&auml;gt.  Studieren &ndash; soviel ist schon klar &ndash; werde ich an der <a href="http://www.swinburne.edu.au/">Swinburne University</a>.  Das Semester beginnt dort am 2. M&auml;rz, endet im Juni (plus Klausurzeit),  danach gehts in den Urlaub und am 30. Juli trete ich meinen Heimweg an.  Bilder von dem was ich so erlebe gibt es auf <a href="http://flickr.com/photos/c0b0lt">Flickr</a>.

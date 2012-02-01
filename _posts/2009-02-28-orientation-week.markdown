@@ -1,0 +1,24 @@
+--- 
+wordpress_id: 81
+author_login: admin
+layout: post
+comments: []
+
+author: Martin Lowinski
+title: Orientation week
+published: true
+tags: []
+
+date: 2009-02-28 16:25:23 +01:00
+categories: 
+- University
+- Australia
+author_email: martin@goldtopf.org
+wordpress_url: http://halfthetruth.de/2009/02/28/orientation-week/
+author_url: http://goldtopf.org
+status: publish
+---
+Sehr erlebnisreich. Am Montag wurden alle internationalen Studenten vom International Office begruesst und durften sich einige Vortraege anhoeren und tolle Kennenlern-Spielchen mitmachen. Sehr eindrucksvoll, aus wievielen Laendern Studenten da sind. Natuerlich war dann am abend in der Stadt Party angesagt. Am Dienstag aehnliches Spiel, diesmal aber mit den richtigen Erstsemestlern der Fakultaet. Wir sind grade mal 4 internationale Informatik-Studenten unter etwa 300 Ersties, integrieren ist da ein Kinderspiel ;) Die Vortraege an diesem Tag waren auch dementsprechend hoeher angelegt und man merkte deutlich, dass Swinburne eine Uni ist. Es ging um Selbststaendigkeit, Lernmethoden usw., schockierend war aber der Tip mindestens 10h pro Fach zu investieren. Bei vier Faechern macht das eine 40h-Woche, schoene(r) Spass/Herausforderung. Sehr schoen war dann aber auch zu sehen, wie unsere (hohen) Studiengebuehren eingesetzt werden: Es gab ein konstenloses Mittagessen. Insgesamt merkt man aber doch, dass hier die Studiengebuehren nicht am Ende des Jahres wieder zum Staat zurueck gehen.
+
+Ab Mittwoch abend war dann wieder Kultur angesagt: Wir waren (wieder) auf dem Queen Victoria Market, diesmal in der Nacht-Version. Ein riesen Markt mit Essen/Trinken aus aller Welt, Klamotten, Musik und guter Stimmung. Hat nur leider schon um 10 zugemacht. Donnerstag abend, ebenfalls Kultur: Einige australische Studenten (SwinMates) haben uns mit zum St Kilda Beach genommen. Aussi Rules Cricket, Meer, Strand, BBQ.. sehr leckeres Essen. Gestern nochmal St Kilda Beach, aber bei 35 Grad macht das gleich viel mehr Spass ;) und abends noch durch St Kilda gelaufen und einige (deutsche) Leute getroffen.
+<div class="flickrset"><a title="Beach Party" rel="lightbox[Australia]" href="http://farm4.static.flickr.com/3648/3321370071_c8bd5d3565.jpg"><img src="http://farm4.static.flickr.com/3648/3321370071_c8bd5d3565_s.jpg" alt="Beach Party" /></a><a title="Beach Party" rel="lightbox[Australia]" href="http://farm4.static.flickr.com/3608/3321368901_f55d5ff4a0.jpg"> <img src="http://farm4.static.flickr.com/3608/3321368901_f55d5ff4a0_s.jpg" alt="Beach Party" /></a><a title="Shrine of Remembrance" rel="lightbox[Australia]" href="http://farm4.static.flickr.com/3640/3322196732_1851a30a7f.jpg"> <img src="http://farm4.static.flickr.com/3640/3322196732_1851a30a7f_s.jpg" alt="Shrine of Remembrance" /></a><a title="Shrine of Remembrance" rel="lightbox[Australia]" href="http://farm4.static.flickr.com/3539/3321364705_30cf9dda0b.jpg"> <img src="http://farm4.static.flickr.com/3539/3321364705_30cf9dda0b_s.jpg" alt="Shrine of Remembrance" /></a><a title="Lunch for free" rel="lightbox[Australia]" href="http://farm4.static.flickr.com/3054/3322194584_5a2a785716.jpg"> <img src="http://farm4.static.flickr.com/3054/3322194584_5a2a785716_s.jpg" alt="Lunch for free" /></a><a title="Queen Victoria Market" rel="lightbox[Australia]" href="http://farm4.static.flickr.com/3567/3321359335_df0956a6cf.jpg"> <img src="http://farm4.static.flickr.com/3567/3321359335_df0956a6cf_s.jpg" alt="Queen Victoria Market" /></a><a title="Queen Victoria Market" rel="lightbox[Australia]" href="http://farm4.static.flickr.com/3662/3321358119_2b32d79c5c.jpg"> <img src="http://farm4.static.flickr.com/3662/3321358119_2b32d79c5c_s.jpg" alt="Queen Victoria Market" /></a><a title="Queen Victoria Market" rel="lightbox[Australia]" href="http://farm4.static.flickr.com/3606/3322187640_7640702e33.jpg"> <img src="http://farm4.static.flickr.com/3606/3322187640_7640702e33_s.jpg" alt="Queen Victoria Market" /></a><a title="St Kilda Beach" rel="lightbox[Australia]" href="http://farm4.static.flickr.com/3539/3321355615_08cbe80cd3.jpg"> <img src="http://farm4.static.flickr.com/3539/3321355615_08cbe80cd3_s.jpg" alt="St Kilda Beach" /></a><a title="Kite-Surfing" rel="lightbox[Australia]" href="http://farm4.static.flickr.com/3576/3322185286_2271baa7b1.jpg"> <img src="http://farm4.static.flickr.com/3576/3322185286_2271baa7b1_s.jpg" alt="Kite-Surfing" /></a></div>

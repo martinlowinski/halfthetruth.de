@@ -1,0 +1,33 @@
+--- 
+wordpress_id: 384
+author_login: admin
+layout: post
+comments: []
+
+author: Martin Lowinski
+title: "Website-Launch: Elzwavestudios.de"
+published: true
+tags: 
+- website
+- elzwavestudios
+date: 2011-01-28 01:03:14 +01:00
+categories: 
+- Work
+author_email: martin@goldtopf.org
+wordpress_url: http://halfthetruth.de/?p=384
+author_url: http://goldtopf.org
+status: publish
+---
+This week, the website of <a href="http://elzwavestudios.de">Elzwavestudios</a> went online! We're really proud to see the result of about 4 months planning, designing and programming released to the public. The Elzwavestudios is a recording studio with additional rehearsal rooms and you can rent all kind of equipment for recording and practicing, even an experienced audio engineer. This provides a great opportunity to record an album on just one weekend for example or simply jam with some friends without disturbing the neighborhood.
+
+<a href="http://oestreicher-medientechnik.de">Benjamin &Ouml;streicher</a> (founder of Elzwavestudios) kicked the project off together with Martin Fischer (Designer) and <a href="http://goldtopf.org">myself</a> (Programming) last year. It was and still is exciting to work with these people. Benjamin had lots and lots of ideas and Martin always turned these ideas into a great layout as you can see on the website.
+
+The website is available in german only right now, but translation will be comming soon. This is the original announcement (de_DE):
+<blockquote>Liebe Freunde, Bekannte, Gesch&auml;ftspartner,
+
+nach nun einj&auml;hriger Planungs- und Realisierungsphase sind wir stolz euch nun unsere fertiggestellten Tonstudio- und Prober&auml;umlichkeiten pr&auml;sentieren zu k&ouml;nnen. Seid herzlich eingeladen uns in Emmendingen in der Denzlingerstrasse 1/1 zu besuchen um euch ein eigenes Bild zu verschaffen. Ihr k&ouml;nnt euch gerne voraub auf unserer neuen <a href="http://elzwavestudios.de">Website</a> umschauen - f&uuml;r den tieferen Einblick sei hier besonders der virtuelle Rundgang erw&auml;hnt.
+
+Ausserdem sind wir vom 01. - 03.02.2011 vertreten auf der <a href="http://www.kulturboerse-freiburg.de/">Kulturb&ouml;rse</a> in Freiburg in der neuen Messe mit einem eigenen Stand (Standnummer 2.1.31). Hier werden wir die Elzwavestudios sowie eine Musterfl&auml;che an Schallschutz-Akustikabsorbern aus Basotect und PU pr&auml;sentieren, deren Vertrieb wir &uuml;bernommen haben.
+Wir freuen uns hier den Einen oder Anderen begr&uuml;&szlig;en zu d&uuml;rfen.
+
+An der Stelle schon mal vorab ein Dankesch&ouml;n an alle die uns planerisch, finanziell, tatkr&auml;ftig, selbstlos, unerm&uuml;dlich unterst&uuml;tzt und geholfen haben. Ohne euch w&auml;re das alles noch immer eine Luftblase. Eine offizielle Einweihungsfeier wird bald folgen.</blockquote>
