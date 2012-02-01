@@ -1,0 +1,31 @@
+--- 
+wordpress_id: 358
+author_login: admin
+layout: post
+comments: []
+
+author: Martin Lowinski
+title: Nokia E75 and Sipgate VoIP
+published: true
+tags: 
+- nokia
+- e75
+- symbian
+- sipgate
+- voip
+date: 2010-10-31 14:59:51 +01:00
+categories: 
+- University
+- Work
+author_email: martin@goldtopf.org
+wordpress_url: http://halfthetruth.de/?p=358
+author_url: http://goldtopf.org
+status: publish
+---
+I recently bought a <a href="http://en.wikipedia.org/wiki/Nokia_E75">Nokia E75</a>. My old phone was, well.. old and I want to have one with wifi. The E75 is not the bleeding edge of mobilephone technology, but I didn't want to pay twice as much for just having a touchscreen (and maybe Android).
+
+One reason I bought this phone is, that I want to have <a href="http://en.wikipedia.org/wiki/VoIP">VoIP</a> whenever I have wifi access. That is of course at home and at uni (where I probably be more of the time). VoIP is great, because you can call from your home number and get calls on the landline which is cheaper in general. And as a student, cheaper is always better ;) For the same reason, I created an account at <a href="http://sipgate.de">Sipgate</a> (de-DE) while I studied abroad two years ago.
+
+So, to get Sipgate working with my E75, I followed the instructions from this great <a href="http://www.s60.at/talk/?p=5270">article</a> (de-AT), which worked fine to create the VoIP-profile. The problem was, that the menu item to activate my profile was missing. This is actually a problem for a couple of Nokia phones, but Nokia provides an additional application to fix this, which is called <a href="http://www.forum.nokia.com/info/sw.nokia.com/id/b1c361a2-7eb2-4853-8c0c-d2f54e184237/SIP_VoIP_3_1_Settings_v2_0_en.sis.html">SIP VoIP Settings</a>. Simply download (unfortunately you need to register) and install it. Than you'll get the settings dialog to activate your sip account.
+
+I can't think of a good reason why this functionality isn't integrated into the original firmware, even if you can create SIP profiles but can't activate them. This is kinda weird but fortunately there's a fix.

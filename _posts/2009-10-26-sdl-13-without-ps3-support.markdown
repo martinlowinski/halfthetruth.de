@@ -1,0 +1,24 @@
+--- 
+wordpress_id: 127
+author_login: admin
+layout: post
+comments: []
+
+author: Martin Lowinski
+title: SDL 1.3 without PS3 support
+published: true
+tags: 
+- gsoc
+- libsdl
+date: 2009-10-26 21:32:54 +01:00
+categories: 
+- Work
+- GSoC-2009
+author_email: martin@goldtopf.org
+wordpress_url: http://halfthetruth.de/2009/10/26/sdl-13-without-ps3-support/
+author_url: http://goldtopf.org
+status: publish
+---
+The PS3 support I wrote withing GSoC 2009 will be removed from SDL in the next few weeks. As some of you know, Sony launched the new Playstation3 Slim without Linux support last month, so lots of developers decided to stop working on their projects supporting this platform. I had to decide on that question as well, so I talked to my GSoC mentor and maintainer of SDL what we should do. He was happy with either ways so I decided to remove it from trunk and to provide a separate patch (which will be comming soon).
+
+It's kinda sad to see the complete work/code of one year going somewhere but probably less than 0.1% of the SDL users will use the PS3 support and therefor SDL 1.3 doesn't need to have the code in their trunk repo. For the people using SDL on their Playstation3, theirs the fbcon driver available which uses the framebuffer device without any SPE acceleration, but it works.
