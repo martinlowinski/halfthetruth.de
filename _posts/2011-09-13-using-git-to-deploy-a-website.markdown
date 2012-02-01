@@ -34,7 +34,7 @@ $> git init --bare
 Initialized empty Git repository in /var/cache/git/website.git/</pre>
 <h1>Post-receive</h1>
 Now comes the magic: We create a post-receive hook, one great way to customize git. To do that simply change to the remote repository and add the following code to the file 'hooks/post-receive' and make it executable.
-<pre lang="bash" escaped="true">$> cat website.git/hooks/post-receive
+{% highlight bash %}
 #!/bin/sh
 echo "********************"
 echo "Post receive hook: Updating website"
@@ -44,7 +44,8 @@ export GIT_WORK_TREE=/var/www/domain.com/htdocs
 cd $GIT_WORK_TREE
 sudo -u www-data git pull
 sudo -u www-data git checkout master -f
-$> chmod +x website.git/hooks/post-receive</pre>
+$> chmod +x website.git/hooks/post-receive
+{% endhighlight %}
 This short script checks out the latest tree into a folder which is accessible by the webserver. If you follow the very nice <a title="A successful git branching model" href="http://nvie.com/posts/a-successful-git-branching-model/" target="_blank">branching model from Vincent Driessen</a> this is also the way to go as the master-branch always reflects a production-ready state. Some people even add a release file containing a tag to achieve the same functionality. They can parse it on post-receive and checkout this specific tag on a branch.
 
 Back to the script. It's not working yet. We have to add a sudo rule for the user git. Therefore run visudo and add the following rules:
