@@ -16,7 +16,6 @@ title: halfthetruth.de
 	<p class="post-meta">
 		tags: {% for tag in post.tags %}{{ tag }} {% endfor %}<br />
 		posted in {{ post.categories }} by {{ post.author }}
-		 | <?php comments_popup_link('No Comments', '1 Comment', '% Comments'); ?>
 	</p>
 </div>
 {% endfor %}
