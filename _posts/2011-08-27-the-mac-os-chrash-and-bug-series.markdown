@@ -27,13 +27,13 @@ So what's the point? Well, there is no operating system out there without bugs. 
 
 With Mac OS X and probably every other proprietary operating system it's a bit different to fight bugs. Apparently we don't have the source, so we can't patch anything (apart from reverse engineering and that kind of stuff). Since the update to Lion I have this bug: The kernel fills up my log with that message:
 
-<code>kernel[0]: nstat_lookup_entry failed: 2</code>
+{% highlight bash %}kernel[0]: nstat_lookup_entry failed: 2{% endhighlight %}
 
 Sometimes every few seconds, sometimes once a day. So the first thing to do? Google it. And I even found some <a href="https://discussions.apple.com/thread/3200365">threads</a> in the Apple Support Community complaining about the issue, some actually say it is slowing down their system, but nobody could come up with a solution.
 
 To be fair, it is not visibly affecting my system. But a few weeks ago I had a major crash:
 
-<code>Aug 7 22:57:20 kernel[0]: WaitForStamp: Overflowed waiting for stamp 0x0 on Main ring: called from
+{% highlight bash %}Aug 7 22:57:20 kernel[0]: WaitForStamp: Overflowed waiting for stamp 0x0 on Main ring: called from
 Aug 7 22:57:20 kernel[0]: timestamp = 0x809ec770
 Aug 7 22:57:20 kernel[0]: **** Debug info for apparent hang in Main graphics engine ****
 Aug 7 22:57:20 kernel[0]: ring head = 0x0f202f68, wrap count = 0x79
@@ -48,7 +48,7 @@ Aug 7 22:57:20 kernel[0]: RBSYNC: (0x 2044) = 0x0
 Aug 7 22:57:20 kernel[0]: VBSYNC: (0x12040) = 0x0
 Aug 7 22:57:20 kernel[0]: kIPEHR: 0x78170003
 Aug 7 22:57:20 kernel[0]: kINSTDONE: 0xfffffffe
-Aug 7 22:57:20 kernel[0]: kINSTDONE_1: 0xffffffff</code>
+Aug 7 22:57:20 kernel[0]: kINSTDONE_1: 0xffffffff{% endhighlight %}
 
 "hang in Main graphics engine" doesn't sound good and my system really hanged. I could do nothing except power-down and restart. And again, there are users who have the <a href="https://discussions.apple.com/thread/2769135">same problem</a>. And again, no solution.
 
