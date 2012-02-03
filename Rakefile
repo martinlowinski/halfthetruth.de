@@ -13,11 +13,6 @@ namespace :jekyll do
   task :compile => [ :clean, 'compass:clean', 'compass:compile' ] do
     system "ejekyll"
   end
-
-  desc 'Publishing site'
-  task :publish => [ :clean, 'compass:clean', 'compass:compile' ] do
-    system "ejekyll --no-auto /tmp/git/blog /tmp/halfthetruth.de"
-  end
 end
 
 namespace :compass do
@@ -45,6 +40,3 @@ desc 'Compile whole site'
 task :compile => [ 'jekyll:compile' ] do
 end
 
-desc 'Publish to halfthetruth.de'
-task :publish => [ 'jekyll:publish' ] do
-end
