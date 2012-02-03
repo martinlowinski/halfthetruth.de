@@ -20,7 +20,11 @@ title: halfthetruth.de
 			<a href="/tags/{{ tag | replace:' ', '-' | downcase  }}" name="{{ tag | replace:' ','-' | downcase }}">{{ tag }}</a>{% if forloop.last == false %}, {% endif %}	
 		{% endfor %}<br />
 		{% endif %}
-		posted in <a href="/categories/{{ post.categories | replace:' ', '-' | downcase  }}">{{ post.categories }}</a> by {{ post.author }}
+		posted in 
+		{% for category in post.categories %}
+			<a href="/categories/{{ category | replace:' ', '-' | downcase  }}">{{ category }}</a>{% if forloop.last == false %}, {% endif %}
+		{% endfor %}
+		by {{ post.author }}
 	</p>
 </div>
 {% endfor %}
