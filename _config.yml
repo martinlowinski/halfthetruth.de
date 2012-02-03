@@ -7,4 +7,4 @@ markdown: rdiscount
 pygments: true
 permalink: /:year/:month/:day/:title
 
-exclude: sass/*
+exclude: ['sass/*', 'Rakefile', 'config.rb']
