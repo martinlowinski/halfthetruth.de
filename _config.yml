@@ -14,3 +14,12 @@ exclude:
   - 'sass'
   - 'Rakefile'
   - 'config.rb'
+
+# Plugins
+disqus_shortname:  halfthetruth
+category_dir:       categories
+
+index_pages:
+  category:
+    do_related:     false
+    title_prefix:   'Category: '
