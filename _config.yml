@@ -23,3 +23,6 @@ index_pages:
   category:
     do_related:     false
     title_prefix:   'Category: '
+  tag:
+    do_related:     true
+    title_prefix:   'Tag: '
