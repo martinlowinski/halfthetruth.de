@@ -15,6 +15,9 @@ exclude:
   - 'Rakefile'
   - 'config.rb'
 
+# Custom
+excerpt_link:   "Read More&hellip;"
+
 # Plugins
 disqus_shortname:  halfthetruth
 category_dir:       categories
