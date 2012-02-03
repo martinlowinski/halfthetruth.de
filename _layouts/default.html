@@ -12,41 +12,98 @@
 	 <link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen, projection" />
 
    <!-- Typekit -->
-   <script type="text/javascript" src="http://use.typekit.com/jpd0pfm.js"></script>
-   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 </head>
-<body>
 
-<div class="site">
-  <div class="title">
-    <a href="/">halfthetruth.de</a>
-    <a class="extra" href="/">home</a>
-    <a class="extra" href="/about.html">about</a>
-    <a class="extra" href="/impressum.html">impressum</a>
-  </div>
-  
-  {{ content }}
-  
-  <div class="footer">
-    <div class="contact">
-      <p>
-        Martin Lowinski<br />
-				martin at goldtopf dot org
-      </p>
-    </div>
-    <div class="contact">
-      <p>
-        <a href="http://github.com/martinlowinski">github.com/martinlowinski</a><br />
-        <a href="http://twitter.com/c0b0lt/">twitter.com/c0b0lt</a><br />
-        <a href="http://flickr.com/photos/c0b0lt/">flickr.com/photos/c0b0lt</a>
-      </p>
-    </div>
-    <div class="rss">
-      <a href="/feed/">
-        Subscribe to RSS Feed
-      </a>
-    </div>
-  </div>
+
+<body>
+<div align="center">
+<div id="wrapper">
+<div id="hd">
+	<div id="sitemeta">
+		<ul>
+     			<li class="rss"><a href="/feed/">Subscribe to RSS Feed</a></li>
+  		</ul>
+	</div>
+	<div id="titlewrapper">
+		<div id="blogtitle">
+			<h1><a href="{{ site.url }}">halfthetruth.de</a></h1>
+		</div>
+		<div id="menu">
+			<ul>
+				<li><div id="blogdescription">Just 42 / 2</div></li>
+				<li><a href="/">Home</a></li>
+				<li><a href="/about.html">About</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="clear">&nbsp;</div>
+
+	<div class="clear">&nbsp;</div>
+</div>
+
+
+<div id="sidebar" class="yui-b">
+	<ul class="sidebar">
+		<li id="text"><h2>Hello.</h2>
+			<p>My name is <a href="http://goldtopf.org">Martin Lowinski</a> and I'm a student & software developer from Freiburg, Germany. I've just finished my Bachelor Thesis about databases on solid state disks and am now doing my Master at the TU Munich. Besides that I'm a freelancer and like to work/develop on open-source software.</p>
+		</li>
+
+		<!--<li id="recentposts"><h2>Recent Articles</h2>
+			<ul>
+			</ul>
+		</li>
+
+		<li id="categories"><h2>Categories</h2>
+			<ul>
+			</ul>
+		</li>
+
+		<li id="archives"><h2>Archives</h2>
+			<ul>
+			</ul>
+		</li>
+		
+		<li id="tagcloud"><h2>Tag Cloud</h2>
+			<ul>
+			</ul>
+		</li>
+
+		<li id="search"><h2>Search</h2>
+		</li>-->
+	</ul>
+</div>
+
+
+<div id="bd" class="single">
+<div id="yui-main"><div class="yui-b"></div>
+
+		{{ content }}
+
+</div>
+</div>
+
+
+</div>
+<div id="ft">
+	<!-- Piwik --> 
+	<script type="text/javascript">
+	var pkBaseURL = (("https:" == document.location.protocol) ? "https://stats.halfthetruth.de/piwik/" : "http://stats.halfthetruth.de/piwik/");
+	document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+	</script><script type="text/javascript">
+	try {
+	var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 2);
+	piwikTracker.trackPageView();
+	piwikTracker.enableLinkTracking();
+	} catch( err ) {}
+	</script><noscript><p><img src="http://stats.halfthetruth.de/piwik/piwik.php?idsite=2" style="border:0" alt="" /></p></noscript>
+	<!-- End Piwik Tracking Code -->
+</div>
+</div>
+</div>
+<div class="clear">&nbsp;</div>
+<div id="footnote" align="center">
+	&copy; 2008-2010 by Martin Lowinski - <a href="/impressum.html">Impressum</a> - Powered by <a href="http://wordpress.org/">Wordpress</a>, Design by <a href="http://www.bingowebdesign.info">Bingo</a> (slightly modified).
+</div>
 </div>
 
 </body>

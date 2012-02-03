@@ -6,6 +6,7 @@ root_desc: "halfthetruth.de"
 markdown: rdiscount
 pygments: true
 permalink: /:year/:month/:day/:title
+paginate: 10
 
 exclude:
   - 'bin'

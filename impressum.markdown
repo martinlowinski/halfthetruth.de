@@ -17,6 +17,8 @@ wordpress_url: http://halfthetruth.de/
 author_url: http://goldtopf.org
 status: publish
 ---
+<h1>Impressum</h1>
+
 Diese Seite wird herausgegeben und betrieben von Martin Lowinski, erreichbar unter
 
 Wilhelmstra&szlig;e 17

@@ -3,11 +3,39 @@ layout: default
 title: halfthetruth.de
 ---
 
-<div id="home">
-  <h1>Blog Posts</h1>
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
+{% for post in paginator.posts %}
+<div class="post-date"><span class="post-month">{{ post.date | date: "%b" }}</span> <span class="post-day">{{ post.date | date: "%M" }}<br />{{ post.date | date: "%Y" }}</span></div>
+
+<div class="post-wrap" id="post-<?php the_ID(); ?>">
+	<h1 class="post"><a href="{{ post.url }}" rel="bookmark" title="Link to {{ post.title }}">{{ post.title }}</a></h1>
+	 
+		<div class="story-content">
+			{{ post.content }}
+		</div>
+
+	<p class="post-meta">
+		tags: {% for tag in post.tags %}{{ tag }} {% endfor %}<br />
+		posted in {{ post.categories }} by {{ post.author }}
+		 | <?php comments_popup_link('No Comments', '1 Comment', '% Comments'); ?>
+	</p>
 </div>
+{% endfor %}
+
+{% if paginator.total_pages > 1 %}
+<div class="nav">
+		{% if paginator.previous_page > 1 %}
+			{% capture page_url %}page{{ page }}{% endcapture%}
+		{% endif %}
+		{% if paginator.previous_page %}
+		<div class="next">
+			<a href="/page{{ paginator.next_page }}" title="Go to next page">Next &raquo;</a>
+		</div>
+		{% endif %}
+		{% if paginator.next_page %}
+		<div class="previous">
+			<a href="/{{ page_url }}" title="Go to previous page">&laquo Previous</a>
+		</div>
+		{% endif %}
+</div>
+{% endif %}
+
