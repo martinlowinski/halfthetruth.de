@@ -48,8 +48,8 @@ end
 
 # Working tasks
 # usage rake new_post[my-new-post] or rake new_post['my new post'] or rake new_post (defaults to "new-post")
-desc "Begin a new post in #{posts_dir}"
-task :new_post, :title do |t, args|
+desc "Begin a new draft post in #{posts_dir}"
+task :post, :title do |t, args|
   args.with_defaults(:title => 'new-post')
   title = args.title
   filename = "#{posts_dir}/#{Time.now.strftime('%Y-%m-%d')}-#{title.to_url}.#{new_post_ext}"
@@ -65,11 +65,17 @@ task :new_post, :title do |t, args|
     post.puts "date: #{Time.now.strftime('%Y-%m-%d %H:%M')}"
     post.puts "author: Martin Lowinski"
     post.puts "comments: true"
+    post.puts "published: false"
     post.puts "categories: "
     post.puts "tags: "
     post.puts "---"
   end
   system "$EDITOR #{filename}"
+end
+
+desc 'List all draft posts'
+task :drafts do
+  puts `find ./_posts -type f -exec grep -H 'published: false' {} \\;`
 end
 
 
