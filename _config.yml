@@ -13,6 +13,7 @@ exclude:
   - 'bin'
   - 'sass'
   - 'Rakefile'
+  - 'Procfile'
   - 'config.rb'
 
 # Custom
