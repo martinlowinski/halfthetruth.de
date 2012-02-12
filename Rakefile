@@ -12,16 +12,13 @@ new_post_ext    = "markdown"  # default new post file extension when using the n
 namespace :jekyll do
   desc 'Delete generated _site files'
   task :clean do
+    puts 'Delete generated _site files'
     system "rm -fR #{public_dir}"
   end
 
-  desc 'Run the jekyll dev server'
-  task :server => [ :compile ] do
-    system "jekyll --server --auto"
-  end
-
-  desc 'Clean temporary files and run the server'
-  task :compile => [ :clean, 'compass:clean', 'compass:compile' ] do
+  desc 'Clean temporary files and compile'
+  task :compile => [ :clean ] do
+    puts 'Clean temporary files and compile'
     system "jekyll"
   end
 end
@@ -29,19 +26,22 @@ end
 
 # Compass & Sass
 namespace :compass do
-  desc 'Delete temporary compass files'
+  desc 'Delete generated compass/sass files'
   task :clean do
+    puts 'Delete generated compass/sass files'
     system "rm -fR css"
   end
 
   desc 'Run the compass watch script'
   task :watch do
+    puts 'Run the compass watch script'
     system "compass watch"
   end
 
-  desc 'Compile sass scripts'
-  task :compile => [:clean] do
-    system "compass compile -s compressed"
+  desc 'Compile compass/sass scripts'
+  task :compile => [ :clean ] do
+    puts 'Compile compass/sass scripts'
+    system "compass compile"
   end  
 end
 
@@ -85,6 +85,12 @@ task :clean => [ 'compass:clean', 'jekyll:clean' ] do
 end
 
 desc 'Compile whole site'
-task :compile => [ 'jekyll:compile' ] do
+task :compile => [ 'compass:compile', 'jekyll:compile' ] do
 end
+
+desc 'Run dev environment'
+task :dev => [ :clean, 'compass:compile' ] do
+  system "foreman start"
+end
+
 
