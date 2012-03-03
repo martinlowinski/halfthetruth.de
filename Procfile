@@ -1,2 +1,2 @@
 compass: compass watch
-jekyll: jekyll --server
+jekyll: jekyll --auto --server

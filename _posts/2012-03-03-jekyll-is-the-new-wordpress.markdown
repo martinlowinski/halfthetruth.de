@@ -2,7 +2,7 @@
 layout: post
 title: "Jekyll is the new Wordpress"
 slug: jekyll-is-the-new-wordpress
-date: 2012-02-07 22:52
+date: 2012-03-03 19:59 +01:00
 author: Martin Lowinski
 comments: true
 published: true
@@ -17,7 +17,7 @@ It's amost 3 years ago since [I moved this blog](/2008/05/05/moved-to-wordpress)
 
 Wordpress is nice, so what's the matter? Well, my server crashed a few times in the last year mostly because it couldn't handle the load. As it is only running lighttpd and MySQL it is easy to pinpoint what the problem is. I'm currently running a growing number of Wordpress instances (plus some handmade code) on this server. You can install Wordpress in 5 minutes but I can't migrate to a bigger machine in 5 minutes. "The Cloud is the solution", one would say. Indeed, it is _a_ solution but a rather expensive one [[1]](http://blog.carlmercier.com/2012/01/05/ec2-is-basically-one-big-ripoff/ "EC2 is basically one big rip-off")[[2]](http://gigaom.com/2012/02/11/which-is-less-expensive-amazon-or-self-hosted/ "Which is less expensive: Amazon or self-hosted?") for this blog.
 
-So instead of constantly switching to bigger machines or invest in the cloud, I want to reduce the load (who doesn't want that?). The $100-question is how? I've already tried some stuff:
+So instead of constantly switching to bigger machines or invest in the cloud, I want to reduce the load (who doesn't want that?) and speedup the page generation. The $100-question is how? I've already tried some stuff:
 
 * W3 Total Cache and [WP-Cache](/2011/08/27/wp-cache-error-500-after-upgrade-to-wordpress-3-2-1)
 * PHP bytecode cache XCache
@@ -46,13 +46,12 @@ This was my todo list to do a clean migration from Wordpress to Jekyll which I w
 * Import posts from Wordpress using the Jekyll importer with some additions
 * Install Sass &amp; Compass
 * Create archive pages for tags and categories
-* Wordpress compatibility tweaks
 * Create some usefull rake tasts (compile, deploy, post, ...)
 
 
 ### Set up Jekyll
 
-This task is the easiest one. Simply fork one of the many git repositories on github (like the one from [mojombo](https://github.com/mojombo/mojombo.github.com)):
+This task is the easiest one. Simply fork one of the many git repositories on github (like the one from [mojombo](https://github.com/mojombo/mojombo.github.com) or [jekyll-bootstrap](http://jekyllbootstrap.com/)):
 
 {% highlight bash %}
 $> git clone https://github.com/mojombo/mojombo.github.com.git
@@ -77,9 +76,37 @@ I tried both ways which are really straight forward but had the problem, that sp
 
 ### Import posts from Wordpress
 
+Jekyll comes with a bunch of import-scripts to import posts/pages from Drupal, Textpattern and also Wordpress. I used the mysql-migrator for wordpress:
+
+{% highlight bash %}
+ruby -rubygems -e 'require "jekyll/migrators/wordpress"; Jekyll::WordPress.process("database", "user", "pass")'
+{% endhighlight %}
+
+Take a look into the [`wordpress.rb`](https://github.com/mojombo/jekyll/blob/master/lib/jekyll/migrators/wordpress.rb) for more options. I used the additional parameters to also import categories and tags.
+
+
 ### Sass &amp; Compass
 
-### Wordpress compatibility
+I'm using Sass and Compass since a few weeks and already love it. The two are quite easy to integrate into jekyll. Simply create `config.rb` which should look like this and don't forget to exclude the config and the `sass` folder from jekyll.
+
+{% highlight bash %}
+http_path = "/"
+css_dir = "css"
+sass_dir = "sass"
+images_dir = "images"
+javascripts_dir = "js"
+output_style = :nested
+{% endhighlight %}
+
+It's also nice to use `foreman` for the compass compilation step. Create `Procfile` with the following:
+
+{% highlight bash %}
+compass: compass watch
+jekyll: jekyll --auto --server
+{% endhighlight %}
+
+With that you can run `foreman start` and it will start and watch both compilation tasks which is very nice for development on your local machine.
+
 
 #### RSS feed
 
@@ -184,4 +211,6 @@ desc 'Compile whole site'
 task :compile => [ 'jekyll:compile' ] do
 end
 {% endhighlight %}
+
+If you've followed this introduction to jekyll you probably have a good working installation by now. So remember what the goal was? Right, to decrease server load und to speedup the page generation. As it is too early to give results, I will do a follow up post in a few weeks or so.
 
