@@ -6,7 +6,7 @@ date: 2012-07-06 14:29 +01:00
 author: Martin Lowinski
 comments: true
 published: true
-categories: 
+categories: website
 tags:
   - nginx
   - ipv6
