@@ -6,7 +6,7 @@ date: 2012-03-03 19:59 +01:00
 author: Martin Lowinski
 comments: true
 published: true
-categories: 
+categories: Website
 tags:
   - wordpress
   - jekyll

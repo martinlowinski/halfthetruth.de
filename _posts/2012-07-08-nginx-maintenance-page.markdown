@@ -6,7 +6,7 @@ date: 2012-07-08 13:45 +01:00
 author: Martin Lowinski
 comments: true
 published: true
-categories: website
+categories: Website
 tags: 
   - nginx
 ---
