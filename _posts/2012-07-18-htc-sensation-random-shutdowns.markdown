@@ -17,7 +17,7 @@ The _first_ bug: The phone automatically switches from silent to normal/loud mod
 
 The _second_ bug: The touchscreen. Especially when the sensation was charging, the touchscreen had massive issues and was almost unusable. Here's a [video](http://www.youtube.com/watch?v=Bk1BlXZQDrU) showing it. This time, I went to the Vodafone shop and got a replacement unit. Unfornutately, it had the same issues. But okay, I can accept that I can't use it when it is charging.
 
-The _third_ bug: Random shutdowns. Every week or so, I take the phone out of my pocket and it's off. I have been living with this bug for a few months now and am tired of it. There a also a bunch of people having [the same problem](http://androidforums.com/htc-sensation/422583-help-my-sensation-keeps-shutting-down-randomly.html). The first solution was the following:
+The _third_ bug: Random shutdowns. Every week or so, I take the phone out of my pocket and it's off. I have been living with this bug for a few months now and am tired of it. There are also a bunch of people having [the same problem](http://androidforums.com/htc-sensation/422583-help-my-sensation-keeps-shutting-down-randomly.html). The first solution was the following:
 
 > I have the same problem and have found a solution for it. The Sensation shuts down when it changes to 2G GSM network. I found this out when I thought it might have something to do with the bad 3G singal in my house, so I changed my phone to 2G only mode and it couldn't stay on for more than 10 seconds. Then I tried to put it on 3G WCDMA only and it hasn't shut down since. It has worked for 5 days now. To change this go to the mobile network menu in settings and change the Network mode to WCDMA only. I'm still going to send my phone to maintenance though.
 
