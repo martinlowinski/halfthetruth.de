@@ -5,7 +5,7 @@ slug: nginx-ssl-notes
 date: 2012-07-22 14:38
 author: Martin Lowinski
 comments: true
-published: true
+published: false
 categories: 
 tags: 
   - nginx
