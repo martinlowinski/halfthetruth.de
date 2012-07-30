@@ -19,7 +19,7 @@ status: publish
 ---
 <h1>About</h1>
 
-My name is Martin Lowinski and I'm a student &amp; software developer from Freiburg, Germany. I've just finished my Bachelor Thesis about relational databases on solid state disks and am now doing my Master at the <a title="TU Munich" href="http://in.tum.de">TU Munich</a>. Besides that I'm a freelancer and like to work/develop on open-source software.
+My name is <a href="http://goldtopf.org">Martin Lowinski</a> and I'm a student & software developer from Freiburg, Germany. I am currently doing my Masters at the <a href="http://in.tum.de">TU Munich</a> and am about to start my Master Thesis about Multicore-Scheduling with Microkernels. Besides that I'm a freelancer developing web-applications.
 
 halfthetruth.de is my personal <a title="Blog - Wikipedia" href="http://en.wikipedia.org/wiki/Blog">blog</a> about basically everything I'm interested in and is worthy to spend some words about. Topics can vary from programming on Linux to administering a customers website or my experiences from the last holiday trip. So just in case you're more interested in a brief description of myself and an overview of my projects, take a look at my <a title="VCard - Wikipedia" href="http://en.wikipedia.org/wiki/Vcard">vcard</a> <a href="http://goldtopf.org">goldtopf.org</a>.
 <h2>Personal Details</h2>
