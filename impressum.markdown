@@ -17,10 +17,11 @@ wordpress_url: http://halfthetruth.de/
 author_url: http://goldtopf.org
 status: publish
 ---
-<h1>Impressum</h1>
+# Impressum #
 
 Diese Seite wird herausgegeben und betrieben von Martin Lowinski, erreichbar unter
 
-Wilhelmstra&szlig;e 17
-78120 Furtwangen
-Telefon: 01234 - 56789
+Birkenweg 6<br/>
+85386 Eching
+
+[martin [at] goldtopf [dot] org](mailto:martin%20%5Bat%5D%20goldtopf%20%5Bdot%5D%20org)
