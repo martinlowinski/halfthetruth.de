@@ -27,6 +27,7 @@ server {
   location @maintenance {
     root   /var/www/servers/$server_name;
     rewrite ^(.*)$ /down.html break;
+  }
 }
 {% endhighlight %}
 
