@@ -13,7 +13,7 @@
 					<a href="/tags/{{ tag | replace:' ', '-' | downcase  }}" name="{{ tag | replace:' ','-' | downcase }}">{{ tag }}</a>{% if forloop.last == false %}, {% endif %}
 				{% endfor %}<br />
 				{% endif %}
-				posted in 
+				posted {% if post.categories != empty %}in{% endif %} 
 				{% for category in post.categories %}
 					<a href="/categories/{{ category | replace:' ', '-' | downcase  }}">{{ category }}</a>{% if forloop.last == false %}, {% endif %}
 				{% endfor %}
