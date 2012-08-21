@@ -6,7 +6,7 @@ date: 2012-07-31 17:59 +01:00
 author: Martin Lowinski
 comments: true
 published: true
-categories: 
+categories: Website
 tags: 
   - nginx
   - ssl
