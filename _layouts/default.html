@@ -14,8 +14,19 @@
 
 	 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
 	 <script src="/js/lightbox.js"></script>
+	 <script type="text/javascript">
+		/* Increase size of searchbox when clicked */
+		$(document).ready(function() {
+		 $('html').click(function() {
+				 $('#query').animate({width: "150px"});
+		 });
+		 $('#query').click(function() {
+				 $(this).animate({width: "300px"});
+				 event.stopPropagation();
+		 });
+		});
+	 </script>
 </head>
-
 
 <body>
 <div align="center">
