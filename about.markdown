@@ -28,5 +28,5 @@ This is my personal blog about basically everything I'm interested in and is wor
 
 * <strong>emai</strong><strong>l/xmpp (private/work):</strong> <a href="mailto:martin%20%5Bat%5D%20goldtopf%20%5Bdot%5D%20org">martin [at] goldtopf [dot] org</a></li>
 * <strong>email (uni):</strong> <a href="mailto:lowinski [at] in [dot] tum [dot] de">lowinski [at] in [dot] tum [dot] de</a></li>
-* <strong>pgp:</strong> <a href="http://pgpkeys.pca.dfn.de/pks/lookup?search=0x35CDCCC4&amp;op=vindex">0&times;35CDCCC4</a> (Fingerprint: 41A8 BB6C 2467 475D 94E9 109E D222 BCA5 35CD CCC4)</li>
+* <strong>pgp:</strong> <a href="http://pgp.mit.edu:11371/pks/lookup?search=0x35CDCCC4&op=vindex">0&times;35CDCCC4</a> (Fingerprint: 41A8 BB6C 2467 475D 94E9 109E D222 BCA5 35CD CCC4)</li>
 
