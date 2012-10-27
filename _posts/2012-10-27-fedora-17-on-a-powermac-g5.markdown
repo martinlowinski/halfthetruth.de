@@ -2,11 +2,11 @@
 layout: post
 title: "Fedora 17 on a PowerMac G5"
 slug: fedora-17-on-a-powermac-g5
-date: 2012-10-24 19:17
+date: 2012-10-27 18:59
 author: Martin Lowinski
 comments: true
-published: false
-categories: 
+published: true
+categories: Uncategorized
 tags: 
   - powerpc
   - nvidia
@@ -21,10 +21,14 @@ It turned out, that the duallink and the so called "phantom" display ports are t
 Today, I talked to a fellow student about my problem. He adviced me to get rid of the DVI-to-VGA adapter and to try it one more time. Well, I honestly couldn't think of a reason why this adapter has something to do with my problem, but I gave it a shot, one last try. And it worked.
 
 My configuration is as follows:
+
 - The DVI-capable monitor connected to the right DVI-port (port location is from facing the back)
 - No DVI-to-VGA adapters
 - The following `yaboot.conf`
 
-{% highlight conf %}
+{% highlight bash %}
 append="nouveau.duallink=0 video=DVI-I-1:d video=DVI-I-2:1680x105-24@60 video=TV-1:d"
 {% endhighlight %}
+
+Unfortunately, repositories like [RPM Fusion](http://rpmfusion.org/) don't support the `ppc` architecture anymore, so you have to build packages like VLC by yourself.
+
