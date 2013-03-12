@@ -17,3 +17,10 @@ This is just a small tip for all git users out there. Usually, after a long work
 [alias]
   today = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --after="yesterday" --abbrev-commit --
 {% endhighlight %}
+
+Update: It also includes commits that occured _after_ yesterday. An improved variant for this kind of scenario would be the following:
+
+{% highlight bash %}
+[alias]
+  today = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --since="6am" --abbrev-commit --
+{% endhighlight %}
