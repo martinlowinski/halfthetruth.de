@@ -22,10 +22,15 @@
   clear: both
   padding: 20px 12px 0
 
-.post-date
-  width: 50px
-  height: 50px
-  float: left
+@media (min-width: 768px)
+  .post-date
+    width: 50px
+    height: 50px
+    float: left
+
+@media (max-width: 767px)
+  .post-date
+    display: none
 
 .post-month
   font-size: 11px
@@ -79,7 +84,7 @@ form
 
 #wrapper
   /*width: 90%;
-  width: 960px
+  width: 740px
   text-align: left
 
 #hd
@@ -146,10 +151,11 @@ form
   background: url(images/rss-icon.gif) no-repeat left center
 
 #bd
-  margin: 0px 230px 0px 0px
+  margin: 0px 0px 0px 0px
   color: #505050
 
 #sidebar
+  display: none
   font-size: 9pt
   width: 200px
   float: right
@@ -207,10 +213,17 @@ li.categories ul
     font-size: 14pt
 
 .post-wrap
-  margin-left: 70px
   padding-bottom: 30px
   border-bottom: 1px solid #e0e0e0
   margin-bottom: 40px
+
+@media (min-width: 768px)
+  .post-wrap
+    margin-left: 70px
+
+@media (max-width: 767px)
+  .post-wrap
+    margin-left: 0px
 
 #commentwrap
   margin-left: 70px
