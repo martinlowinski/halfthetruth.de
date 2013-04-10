@@ -24,7 +24,7 @@ title: halfthetruth.de
 		{% for category in post.categories %}
 			<a href="/categories/{{ category | replace:' ', '-' | downcase  }}">{{ category }}</a>{% if forloop.last == false %}, {% endif %}
 		{% endfor %}
-		by {{ post.author }}
+		by <a rel="author">{{ post.author }}</a>
 	</p>
 </div>
 {% endfor %}
