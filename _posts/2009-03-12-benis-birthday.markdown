@@ -10,7 +10,7 @@ comments:
   date_gmt: Sun Mar 15 07:33:55 +0100 2009
   author_email: ""
   author_url: http://www.hoobidownunder.de.vu/
-author: Martin Lowinski
+author: martinlowinski
 title: Benis Birthday
 published: true
 tags: []

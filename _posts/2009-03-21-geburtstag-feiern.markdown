@@ -12,7 +12,7 @@ comments:
   date_gmt: Sun Mar 22 03:49:39 +0100 2009
   author_email: ""
   author_url: http://www.hoobidownunder.de.vu/
-author: Martin Lowinski
+author: martinlowinski
 title: Geburtstag feiern
 published: true
 tags: []

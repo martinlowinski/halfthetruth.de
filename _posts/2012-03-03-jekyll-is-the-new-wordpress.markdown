@@ -3,7 +3,7 @@ layout: post
 title: "Jekyll is the new Wordpress"
 slug: jekyll-is-the-new-wordpress
 date: 2012-03-03 19:59 +01:00
-author: Martin Lowinski
+author: martinlowinski
 comments: true
 published: true
 categories: Website

@@ -3,7 +3,7 @@ layout: post
 title: "TimeCapsule for Linux fans"
 slug: timecapsule-for-linux-fans
 date: 2013-01-30 22:59
-author: Martin Lowinski
+author: martinlowinski
 comments: true
 published: false
 categories: 
@@ -19,18 +19,27 @@ tags:
 
 == Netatalk (AFP Service) ==
 
+{% highlight bash %}
 sudo apt-get build-dep netatalk
 sudo aptitude install cracklib2-dev fakeroot libssl-dev
 sudo apt-get source netatalk
+{% endhighlight %}
 
+{% highlight bash %}
 cd netatalk-2*
 sudo DEB_BUILD_OPTIONS=ssl dpkg-buildpackage -rfakeroot
+{% endhighlight %}
 
+{% highlight bash %}
 sudo dpkg -i ~/netatalk_2*.deb
+{% endhighlight %}
 
+{% highlight bash %}
 echo "netatalk hold" | sudo dpkg --set-selections
+{% endhighlight %}
 
 
+{% highlight bash %}
 /etc/default/netatalk
 ATALKD_RUN=no
 PAPD_RUN=no
@@ -38,6 +47,7 @@ CNID_METAD_RUN=yes
 AFPD_RUN=yes
 TIMELORD_RUN=no
 A2BOOT_RUN=no
+{% endhighlight %}
 
 /etc/netatalk/afpd.conf
 - -tcp -noddp -ipaddr 10.8.0.1 -noddp -uamlist uams_randnum.so,uams_dhx.so,uams_dhx2.so -nosavepassword -mimicmodel RackMac

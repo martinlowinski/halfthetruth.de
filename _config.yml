@@ -30,3 +30,12 @@ index_pages:
   tag:
     do_related:     true
     title_prefix:   'Tag: '
+
+authors:
+  martinlowinski:
+    name: Martin Lowinski
+    display_name: Martin Lowinski
+    gravatar: cc9aeac10a3de847d39e6c09ea364c1e
+    web: http://martinlowinski.de
+    twitter: c0b0lt
+    github: martinlowinski

@@ -3,7 +3,7 @@ layout: post
 title: "Nginx Maintenance Page"
 slug: nginx-maintenance-page
 date: 2012-07-08 13:45 +01:00
-author: Martin Lowinski
+author: martinlowinski
 comments: true
 published: true
 categories: Website

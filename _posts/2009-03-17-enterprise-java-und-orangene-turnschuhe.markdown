@@ -4,7 +4,7 @@ author_login: admin
 layout: post
 comments: []
 
-author: Martin Lowinski
+author: martinlowinski
 title: Enterprise Java und orangene Turnschuhe
 published: true
 tags: []

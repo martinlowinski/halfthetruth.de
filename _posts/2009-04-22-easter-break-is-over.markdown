@@ -4,7 +4,7 @@ author_login: admin
 layout: post
 comments: []
 
-author: Martin Lowinski
+author: martinlowinski
 title: Easter break is over
 published: true
 tags: []

@@ -4,7 +4,7 @@ author_login: admin
 layout: post
 comments: []
 
-author: Martin Lowinski
+author: martinlowinski
 title: Using git to deploy a website
 published: true
 tags: 

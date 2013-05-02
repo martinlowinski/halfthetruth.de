@@ -4,7 +4,7 @@ author_login: admin
 layout: post
 comments: []
 
-author: Martin Lowinski
+author: martinlowinski
 title: SDL 1.3 without PS3 support
 published: true
 tags: 

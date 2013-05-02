@@ -4,7 +4,7 @@ author_login: admin
 layout: post
 comments: []
 
-author: Martin Lowinski
+author: martinlowinski
 title: "Mac OS X: Quick Look with Syntax Highlighting"
 published: true
 tags: 

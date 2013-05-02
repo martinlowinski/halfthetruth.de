@@ -4,7 +4,7 @@ author_login: admin
 layout: post
 comments: []
 
-author: Martin Lowinski
+author: martinlowinski
 title: "WP-Cache: Error 500 after upgrade to Wordpress 3.2.1"
 published: true
 tags: 

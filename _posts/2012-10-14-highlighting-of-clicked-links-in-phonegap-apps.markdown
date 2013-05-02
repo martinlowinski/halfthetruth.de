@@ -3,7 +3,7 @@ layout: post
 title: "Highlighting of clicked Links in PhoneGap Apps"
 slug: highlighting-of-clicked-links-in-phonegap-apps
 date: 2012-10-14 23:09
-author: Martin Lowinski
+author: martinlowinski
 comments: true
 published: true
 categories: Work

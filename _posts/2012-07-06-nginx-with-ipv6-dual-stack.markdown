@@ -3,7 +3,7 @@ layout: post
 title: "Nginx with IPv6/Dual stack"
 slug: nginx-with-ipv6-dual-stack
 date: 2012-07-06 14:29 +01:00
-author: Martin Lowinski
+author: martinlowinski
 comments: true
 published: true
 categories: Website

@@ -3,7 +3,7 @@ layout: post
 title: "HTC Sensation: Random Shutdowns"
 slug: htc-sensation-random-shutdowns
 date: 2012-07-18 14:53 +01:00
-author: Martin Lowinski
+author: martinlowinski
 comments: true
 published: true
 categories: Uncategorized

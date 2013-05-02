@@ -19,7 +19,7 @@ comments:
   date_gmt: Sun Dec 27 19:41:04 +0100 2009
   author_email: martin@goldtopf.org
   author_url: http://goldtopf.org
-author: Martin Lowinski
+author: martinlowinski
 title: "Unfug: Playstation3 presentation"
 published: true
 tags: []

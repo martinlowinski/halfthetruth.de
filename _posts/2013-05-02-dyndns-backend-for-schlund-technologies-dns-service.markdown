@@ -3,7 +3,7 @@ layout: post
 title: "DynDNS backend for Schlund-Technologies DNS service"
 slug: dyndns-backend-for-schlund-technologies-dns-service
 date: 2013-05-02 19:10
-author: Martin Lowinski
+author: martinlowinski
 comments: true
 published: true
 categories: 

@@ -4,6 +4,7 @@ title: halfthetruth.de
 ---
 
 {% for post in paginator.posts %}
+{% assign author = site.authors[post.author] %}
 <div class="post-date"><span class="post-month">{{ post.date | date: "%b" }}</span> <span class="post-day">{{ post.date | date: "%d" }}<br />{{ post.date | date: "%Y" }}</span></div>
 
 <div class="post-wrap" id="post-<?php the_ID(); ?>">
@@ -24,7 +25,7 @@ title: halfthetruth.de
 		{% for category in post.categories %}
 			<a href="/categories/{{ category | replace:' ', '-' | downcase  }}">{{ category }}</a>{% if forloop.last == false %}, {% endif %}
 		{% endfor %}
-		by <a rel="author">{{ post.author }}</a>
+		by <a rel="author">{{ author.display_name }}</a>
 	</p>
 </div>
 {% endfor %}

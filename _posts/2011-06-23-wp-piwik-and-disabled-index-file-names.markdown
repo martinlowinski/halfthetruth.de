@@ -4,7 +4,7 @@ author_login: admin
 layout: post
 comments: []
 
-author: Martin Lowinski
+author: martinlowinski
 title: WP-Piwik and disabled index-file.names
 published: true
 tags: 

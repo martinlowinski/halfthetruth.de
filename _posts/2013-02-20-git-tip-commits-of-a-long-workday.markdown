@@ -3,7 +3,7 @@ layout: post
 title: "Git tip: commits of a long workday"
 slug: git-tip-commits-of-a-long-workday
 date: 2013-02-20 23:46
-author: Martin Lowinski
+author: martinlowinski
 comments: true
 published: true
 categories: work

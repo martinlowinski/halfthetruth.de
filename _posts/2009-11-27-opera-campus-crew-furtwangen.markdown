@@ -10,7 +10,7 @@ comments:
   date_gmt: Mon Dec 21 07:25:52 +0100 2009
   author_email: flash.papers@gmail.com
   author_url: http://www.flashpapers.com
-author: Martin Lowinski
+author: martinlowinski
 title: Opera Campus Crew Furtwangen
 published: true
 tags: []

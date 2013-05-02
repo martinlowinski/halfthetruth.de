@@ -3,7 +3,7 @@ layout: post
 title: "Fedora 17 on a PowerMac G5"
 slug: fedora-17-on-a-powermac-g5
 date: 2012-10-27 18:59
-author: Martin Lowinski
+author: martinlowinski
 comments: true
 published: true
 categories: Uncategorized

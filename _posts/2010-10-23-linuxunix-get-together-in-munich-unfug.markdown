@@ -4,7 +4,7 @@ author_login: admin
 layout: post
 comments: []
 
-author: Martin Lowinski
+author: martinlowinski
 title: Linux/Unix get-together in Munich (UnFUG)
 published: true
 tags: 

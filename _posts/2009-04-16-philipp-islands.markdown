@@ -13,7 +13,7 @@ comments:
   date_gmt: Thu Apr 16 08:00:17 +0200 2009
   author_email: ""
   author_url: http://www.hoobidownunder.de.vu
-author: Martin Lowinski
+author: martinlowinski
 title: Philipp Islands
 published: true
 tags: []

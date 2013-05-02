@@ -4,7 +4,7 @@ author_login: admin
 layout: post
 comments: []
 
-author: Martin Lowinski
+author: martinlowinski
 title: Backups with duplicity and Amazon S3
 excerpt: |-
   Last month I accidentally deleted ~700 emails from my inbox. And these sevenhundred emails weren't spam, no, I've read some of them just a minute ago. Even worse, I couldn't figure out what had happened to them. During an offlineimap-sync from my mailserver to a local harddrive offlineimap reported that it deleted my mails, on the mailserver and on my harddrive. And after some frustating hours of trying to recover these mails I decided to go on and find a better way to backup my inbox (and other files).

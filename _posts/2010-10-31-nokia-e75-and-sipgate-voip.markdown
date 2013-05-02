@@ -4,7 +4,7 @@ author_login: admin
 layout: post
 comments: []
 
-author: Martin Lowinski
+author: martinlowinski
 title: Nokia E75 and Sipgate VoIP
 published: true
 tags: 

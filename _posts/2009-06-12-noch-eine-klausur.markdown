@@ -22,7 +22,7 @@ comments:
   date_gmt: Wed Jun 17 07:03:40 +0200 2009
   author_email: martin@goldtopf.org
   author_url: http://goldtopf.org
-author: Martin Lowinski
+author: martinlowinski
 title: Noch eine Klausur
 published: true
 tags: []

@@ -4,7 +4,7 @@ author_login: admin
 layout: post
 comments: []
 
-author: Martin Lowinski
+author: martinlowinski
 title: Unix Friends and User Group Campus Kamp
 published: true
 tags: []

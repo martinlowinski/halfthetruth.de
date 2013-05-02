@@ -3,7 +3,7 @@ layout: post
 title: "Nginx SSL notes"
 slug: nginx-ssl-notes
 date: 2012-07-31 17:59 +01:00
-author: Martin Lowinski
+author: martinlowinski
 comments: true
 published: true
 categories: Website

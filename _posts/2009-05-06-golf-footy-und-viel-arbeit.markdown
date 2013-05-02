@@ -32,7 +32,7 @@ comments:
   date_gmt: Tue May 12 12:35:13 +0200 2009
   author_email: martin@goldtopf.org
   author_url: http://goldtopf.org
-author: Martin Lowinski
+author: martinlowinski
 title: Golf, Footy und viel Arbeit
 published: true
 tags: []
