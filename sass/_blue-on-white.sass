@@ -20,17 +20,17 @@
 
 .post
   clear: both
-  padding: 20px 12px 0
+  @media (min-width: 768px)
+    padding: 20px 12px 0
+  @media (max-width: 767px)
+    padding: 20px 0px 0 0
 
-@media (min-width: 768px)
-  .post-date
-    width: 50px
-    height: 50px
-    float: left
-
-@media (max-width: 767px)
-  .post-date
+.post-date
+  @media (max-width: 767px)
     display: none
+  width: 50px
+  height: 50px
+  float: left
 
 .post-month
   font-size: 11px
@@ -73,8 +73,8 @@
 body
   background: #ffffff
   /*font-size: 9pt;
-  font-size: 10pt
-  line-height: 1.6
+  font-size: 11pt
+  line-height: 17pt
   color: #505050
   /*font-family: Verdana, Arial, Helvetica, sans-serif;
   font-family: "Droid Sans","Lucida Grande",Tahoma,sans-serif
@@ -83,14 +83,17 @@ form
   display: inline
 
 #wrapper
-  /*width: 90%;
-  width: 740px
   text-align: left
+  @media (min-width: 768px)
+    width: 740px
+  @media (max-width: 767px)
+    width: 98%
 
 #hd
-  padding-bottom: 10px
   margin-bottom: 20px
   border-bottom: 1px solid #e0e0e0
+  line-height: 14pt
+  padding-top: 10px
 
 #blogtitle h1
   display: inline
@@ -102,9 +105,12 @@ form
     vertical-align: bottom
 
 #menu
+  @media (max-width: 767px)
+    display: none
   margin-top: 10px
   display: inline
   float: left
+  font-size: 90%
   ul
     list-style: none outside
     margin: 0px
@@ -112,7 +118,6 @@ form
     li
       float: left
       a
-        font-size: 10pt
         padding-left: 15px
         font-weight: bold
         text-decoration: none
@@ -128,8 +133,11 @@ form
   font-weight: bold
 
 #sitemeta
+  @media (max-width: 767px)
+    display: none
   float: right
-  font-size: 11px
+  font-size: 8pt
+  line-height: 10pt
   text-decoration: none
   ul
     list-style: none
@@ -216,13 +224,9 @@ li.categories ul
   padding-bottom: 30px
   border-bottom: 1px solid #e0e0e0
   margin-bottom: 40px
-
-@media (min-width: 768px)
-  .post-wrap
+  @media (min-width: 768px)
     margin-left: 70px
-
-@media (max-width: 767px)
-  .post-wrap
+  @media (max-width: 767px)
     margin-left: 0px
 
 .metawrap img.avatar
@@ -244,7 +248,7 @@ li.categories ul
     color: #2284f2
     font-size: 14pt
     text-decoration: none
-    font-weight: normal
+    font-weight: bold
     a
       color: #505050
       text-decoration: none
