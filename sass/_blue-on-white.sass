@@ -1,3 +1,9 @@
+
+@import "foundation/components/global"
+@import "foundation/components/grid"
+@import "foundation/components/visibility"
+
+
 /*   
  *Theme Name: Blue on White
  *Description: A clear and simple blue and white theme made for everyone who likes simplicity.
@@ -20,17 +26,12 @@
 
 .post
   clear: both
-  @media (min-width: 768px)
+  padding: 20px 0px 0 0
+  @media #{$small}
     padding: 20px 12px 0
-  @media (max-width: 767px)
-    padding: 20px 0px 0 0
 
 .post-date
-  @media (max-width: 767px)
-    display: none
-  width: 50px
-  height: 50px
-  float: left
+  @extend .hide-for-small
 
 .post-month
   font-size: 11px
@@ -84,10 +85,9 @@ form
 
 #wrapper
   text-align: left
-  @media (min-width: 768px)
+  width: 98%
+  @media #{$small}
     width: 740px
-  @media (max-width: 767px)
-    width: 98%
 
 #hd
   margin-bottom: 20px
@@ -105,8 +105,7 @@ form
     vertical-align: bottom
 
 #menu
-  @media (max-width: 767px)
-    display: none
+  @extend .hide-for-small
   margin-top: 10px
   display: inline
   float: left
@@ -133,8 +132,7 @@ form
   font-weight: bold
 
 #sitemeta
-  @media (max-width: 767px)
-    display: none
+  @extend .hide-for-small
   float: right
   font-size: 8pt
   line-height: 10pt
@@ -224,10 +222,9 @@ li.categories ul
   padding-bottom: 30px
   border-bottom: 1px solid #e0e0e0
   margin-bottom: 40px
-  @media (min-width: 768px)
+  margin-left: 0px
+  @media #{$small}
     margin-left: 70px
-  @media (max-width: 767px)
-    margin-left: 0px
 
 .metawrap img.avatar
   float: left
