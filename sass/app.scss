@@ -59,7 +59,7 @@
 
 body {
   border-top: 8px solid #2ba6cb;
-  padding-top: 20px;
+  padding-top: 30px;
 }
 
 ul {
@@ -81,6 +81,14 @@ pre {
     line-height: 1.4em;
     padding: .7em !important;
     display: block;
+  }
+}
+
+#header {
+  h2 {
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
   }
 }
 
