@@ -85,6 +85,7 @@ pre {
 }
 
 #navigation {
+  display: none;
   #menu ul {
     @include inline-list;
   }
