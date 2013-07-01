@@ -56,6 +56,12 @@
 @import "foundation-jekyll";
 
 /* Modifications */
+
+body {
+  border-top: 8px solid #2ba6cb;
+  padding-top: 20px;
+}
+
 ul {
   padding-left: 40px;
 }
