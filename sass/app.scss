@@ -148,18 +148,45 @@ pre {
   }
 }
 
+#related_posts {
+  ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  span.date {
+    color: #999;
+  }
+}
+
 ul.pagination {
   padding-left: 0px;
 }
 
 #footer {
-  text-align: center;
   font-weight: 200;
+  padding-left: 0px;
+  padding-right: 0px;
   ul {
+    list-style: none;
+    padding-left: 0px;
     margin-bottom: 5px;
     margin-left: 0px;
   }
-  .inline-list > li > * {
-    display: inline-block;
+  div {
+    text-align: center;
+  }
+  @media #{$small} {
+    div.left {
+      text-align: left;
+    }
+    div.right {
+      text-align: right;
+    }
+    li.search {
+      float: right;
+      #search_form #query {
+        width: 200px;
+      }
+    }
   }
 }
