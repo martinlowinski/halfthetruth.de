@@ -5,7 +5,7 @@ slug: timecapsule-for-linux-fans
 date: 2013-08-20 22:59
 author: martinlowinski
 comments: true
-published: false
+published: true
 categories: 
 tags: 
   - mac
@@ -47,8 +47,8 @@ echo "netatalk hold" | sudo dpkg --set-selections
 {% endhighlight %}
 
 
+`/etc/default/netatalk`
 {% highlight bash %}
-/etc/default/netatalk
 ATALKD_RUN=no
 PAPD_RUN=no
 CNID_METAD_RUN=yes
@@ -57,13 +57,13 @@ TIMELORD_RUN=no
 A2BOOT_RUN=no
 {% endhighlight %}
 
+`/etc/netatalk/afpd.conf`
 {% highlight bash %}
-/etc/netatalk/afpd.conf
 - -tcp -noddp -ipaddr 10.8.0.1 -noddp -uamlist uams_randnum.so,uams_dhx.so,uams_dhx2.so -nosavepassword -mimicmodel RackMac
 {% endhighlight %}
 
+`/etc/netatalk/AppleVolumes.default`
 {% highlight bash %}
-/etc/netatalk/AppleVolumes.default
 /home/cobolt/timemachine TimeMachine allow:cobolt cnidscheme:dbd options:usedots,upriv,tm
 {% endhighlight %}
 
@@ -78,14 +78,12 @@ sudo /etc/init.d/netatalk restart
 sudo aptitude install avahi-daemon
 {% endhighlight %}
 
+`/etc/nsswitch.conf`
 {% highlight bash %}
-/etc/nsswitch.conf
 hosts: files mdns4_minimal [NOTFOUND=return] dns mdns4 mdns
 {% endhighlight %}
 
-{% highlight bash %}
-/etc/avahi/services/afpd.service
-{% endhighlight %}
+`/etc/avahi/services/afpd.service`
 {% highlight xml %}
 <?xml version="1.0" standalone='no'?><!--*-nxml-*-->
 <!DOCTYPE service-group SYSTEM "avahi-service.dtd">
@@ -130,8 +128,8 @@ checkinstall --pkgname=netatalk --pkgversion="$(date +%Y%m%d%H%M)" --backup=no -
 {% endhighlight %}
 
 Configs in:
-/usr/local/etc/netatalk/afpd.conf
-/usr/local/etc/netatalk/AppleVolumes.default
+`/usr/local/etc/netatalk/afpd.conf`
+`/usr/local/etc/netatalk/AppleVolumes.default`
 
 ## Mac ##
 
@@ -151,7 +149,7 @@ mount -t afp afp://username:password@hostname/ShareName /Volumes/ShareMount
 
 ## References ##
 
-http://kremalicious.com/ubuntu-as-mac-file-server-and-time-machine-volume/
-http://www.tristanwaddington.com/2011/07/debian-time-machine-server-os-x-lion/
-http://chris-lyons.blogspot.de/2012/03/setting-time-machine-and-netatalk-222.html
-http://www.ubuntugeek.com/getting-timemachine-to-work-under-ubuntu-10-04-lts-os-x-lion.html
+* [kremalicious.com/ubuntu-as-mac-file-server-and-time-machine-volume/](http://kremalicious.com/ubuntu-as-mac-file-server-and-time-machine-volume/)
+* [tristanwaddington.com/2011/07/debian-time-machine-server-os-x-lion/](http://www.tristanwaddington.com/2011/07/debian-time-machine-server-os-x-lion/)
+* [chris-lyons.blogspot.de/2012/03/setting-time-machine-and-netatalk-222.html](http://chris-lyons.blogspot.de/2012/03/setting-time-machine-and-netatalk-222.html)
+* [ubuntugeek.com/getting-timemachine-to-work-under-ubuntu-10-04-lts-os-x-lion.html](http://www.ubuntugeek.com/getting-timemachine-to-work-under-ubuntu-10-04-lts-os-x-lion.html)
