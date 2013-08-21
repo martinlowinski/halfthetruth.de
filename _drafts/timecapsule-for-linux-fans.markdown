@@ -21,11 +21,21 @@ tags:
   alt: TimeCapsule for Linux fans
 {% endimage %}
 
-"Back up your data before you continue!" Almost every tutorial where you mess with your data starts with it. And the question is always how? For all the OSX' users out there, there is TimeMachine. It is an incremental back-up mechanism that is needly integrated into the OS. Backing up is done hourly and restoring data is easy (from a very fancy GUI). OSX supports the TimeCapsule, external harddrives and some [NAS](abbr:Network Attached Storage) as backup location. These NAS are typically Linux-based and run some sort of [netatalk](http://netatalk.sourceforge.net/), the open-source implementation of the AppleTalk protocol. I have a Netgear NAS running netatalk at home but had the problem that when I'm on the road, I can't access the data (since I don't want to drill a hole into my router's firewall).
+_"Back up your data before you continue!"_ Almost every tutorial where you mess with your data starts with it. And the question is always how? For all the OSX' users out there, there is TimeMachine. It is an incremental back-up mechanism that is needly integrated into the OS. Backing up is done hourly and restoring data is easy (from a very fancy GUI). OSX supports the TimeCapsule, external harddrives and some [NAS](abbr:Network Attached Storage) as backup location. These NAS are typically Linux-based and run some sort of [netatalk](http://netatalk.sourceforge.net/), the open-source implementation of the AppleTalk protocol. I have a Netgear NAS running netatalk at home but had the problem that when I'm on the road, I can't access the data (since I don't want to drill a hole into my router's firewall).
+
+A virtual-server was my solution to that. It is 24/7 online, accessible from nearly everywhere and has a 100Mbit/s connection. In this post I will describe how you set up a [VPN](abbr:Virtual Private Network) to do backups via TimeMachine on an AFP-share. I'm using Debian Squeeze here, but the instructions should work on other distributions as well. First, we will configure a VPN to transfer the data securely and then create the AFP service within the new network.
+
+Packages that you need (without dependencies):
+
+* netatalk >= 2.2.4
+* avahi-daemon
+* openvpn
 
 ## OpenVPN ##
 
 ## Netatalk (AFP Service) ##
+
+Since most distributions don't include netatalk >= 2.2.4, we have to build it from source.
 
 {% highlight bash %}
 sudo apt-get build-dep netatalk
