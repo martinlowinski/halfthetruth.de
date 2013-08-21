@@ -27,7 +27,7 @@ A virtual-server was my solution to that. It is 24/7 online, accessible from nea
 
 Packages that you need (without dependencies):
 
-* netatalk >= 2.2.4
+* netatalk >= 2.2
 * avahi-daemon
 * openvpn
 
@@ -35,29 +35,39 @@ Packages that you need (without dependencies):
 
 ## Netatalk (AFP Service) ##
 
-Since most distributions don't include netatalk >= 2.2.4, we have to build it from source.
+Netatalk is the open-source implementation of Apples AFP protocol. Since most distributions don't build netatalk with enabled encryption - which is needed by OSX - we have to configure and build the package ourselves.
+
+This is how you do it:
 
 {% highlight bash %}
-sudo apt-get build-dep netatalk
-sudo aptitude install cracklib2-dev fakeroot libssl-dev
-sudo apt-get source netatalk
+$> sudo apt-get build-dep netatalk
+$> sudo aptitude install cracklib2-dev fakeroot libssl-dev
+$> sudo apt-get source netatalk
 {% endhighlight %}
+
+Another approach would be to install netatalk beta from an unofficial repository which is described [here][2].
+
+Now we have installed all dependencies and downloaded the source package the our home directory. From there we can build netatalk with encryption enabled, this may take a while. Encryption is needed since FileVault was introduced to OSX.
 
 {% highlight bash %}
 cd netatalk-2*
 sudo DEB_BUILD_OPTIONS=ssl dpkg-buildpackage -rfakeroot
 {% endhighlight %}
 
+When the process is finished without errors (simply ignore the warnings), we can install the new package as follows:
+
 {% highlight bash %}
 sudo dpkg -i ~/netatalk_2*.deb
 {% endhighlight %}
+
+As our new netatalk will have the same version number, Debian will overwrite it when an update is available. To prevent that, we will set the package state to hold.
 
 {% highlight bash %}
 echo "netatalk hold" | sudo dpkg --set-selections
 {% endhighlight %}
 
+Netatalk has lots of features which are enabled by default but we only need a few of them. All daemons can be configured in `/etc/default/netatalk`. For AFP shares, set `AFPD` and `CNID_META` to yes, if you want to use a printer enable `PAPD`.
 
-`/etc/default/netatalk`
 {% highlight bash %}
 ATALKD_RUN=no
 PAPD_RUN=no
@@ -67,15 +77,23 @@ TIMELORD_RUN=no
 A2BOOT_RUN=no
 {% endhighlight %}
 
-`/etc/netatalk/afpd.conf`
+Next, we configure the AFP daemon in `/etc/netatalk/afpd.conf`. Add the following at the bottom of the file or replace the existing line:
+
 {% highlight bash %}
 - -tcp -noddp -ipaddr 10.8.0.1 -noddp -uamlist uams_randnum.so,uams_dhx.so,uams_dhx2.so -nosavepassword -mimicmodel RackMac
 {% endhighlight %}
 
-`/etc/netatalk/AppleVolumes.default`
+This setting will set the AFP daemon to only listen to our private network for TCP connections and not to the outside world.
+
+The last step is to tell the AFP daemon which Volumes it should offer. This is described in the `/etc/netatalk/AppleVolumes.default` configuration file. Because we want TimeMachine to work, add the following line:
+
 {% highlight bash %}
-/home/cobolt/timemachine TimeMachine allow:cobolt cnidscheme:dbd options:usedots,upriv,tm
+/home/username/timemachine TimeMachine allow:username cnidscheme:dbd options:usedots,upriv,tm
 {% endhighlight %}
+
+This will create a share that can only be accessed from `username` and stores the data in `/home/username/timemachine` (you have to create this folder manually).
+
+And finally, restart netatalk:
 
 {% highlight bash %}
 sudo /etc/init.d/netatalk restart
@@ -163,3 +181,5 @@ mount -t afp afp://username:password@hostname/ShareName /Volumes/ShareMount
 * [tristanwaddington.com/2011/07/debian-time-machine-server-os-x-lion/](http://www.tristanwaddington.com/2011/07/debian-time-machine-server-os-x-lion/)
 * [chris-lyons.blogspot.de/2012/03/setting-time-machine-and-netatalk-222.html](http://chris-lyons.blogspot.de/2012/03/setting-time-machine-and-netatalk-222.html)
 * [ubuntugeek.com/getting-timemachine-to-work-under-ubuntu-10-04-lts-os-x-lion.html](http://www.ubuntugeek.com/getting-timemachine-to-work-under-ubuntu-10-04-lts-os-x-lion.html)
+
+[2]: http://www.tristanwaddington.com/2011/07/debian-time-machine-server-os-x-lion/
