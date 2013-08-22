@@ -86,10 +86,6 @@ pre {
   }
 }
 
-#header, #content, #footer {
-	background-color: #f9f9f9;
-}
-
 #header {
   text-align: center;
   @media #{$small} {
