@@ -3,30 +3,15 @@ layout: default
 title: halfthetruth.de
 ---
 
+<ul class="posts">
 {% for post in paginator.posts %}
 {% assign author = site.authors[post.author] %}
-<div class="post-wrap" id="primary post-<?php the_ID(); ?>" role="content">
-
-	<article class="{{ page.type }}" role="article" itemscope itemtype="http://schema.org/BlogPosting">
-		<header class="article-header">
-			<div class="post-date">
-				{{ post.date | date: "%b" }} {{ post.date | date: "%d" }}, {{ post.date | date: "%Y" }}
-			</div>
-
-			<h1 class="article-title post" itemprop="headline">
-				<a href="{{ post.url }}" rel="bookmark" title="Link to {{ post.title }}">{{ post.title }}</a>
-			</h1>
-		</header>
-		 
-		<div class="story-content">
-			<section class="article-content" itemprop="articleBody">
-				{{ post.content }}
-			</section>
-		</div>
-	</article>
-
-</div>
+<li>
+	<span><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></span>
+	<small><strong>{{ post.date | date: "%B %e, %Y" }}</strong></small>
+</li>
 {% endfor %}
+</ul>
 
 {% if paginator.total_pages > 1 %}
 <div class="pagination-centered">
