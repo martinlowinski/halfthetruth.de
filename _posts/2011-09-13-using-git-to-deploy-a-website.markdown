@@ -72,7 +72,7 @@ This allows git (and the user 'git') to switch to 'www-data' (the webserver user
 The deployment-process is set up and ready. Now we have to configure our local repository to be able to run 'git push website'. For that we have to connect the remote repository with the local one and push the changes:
 
 {% highlight bash %}
-$> git remote add webite git+ssh://domain.com/website.git
+$> git remote add website git+ssh://domain.com/website.git
 $> git push website +master:refs/heads/master
 {% endhighlight %}
 
