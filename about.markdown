@@ -1,7 +1,7 @@
 --- 
 wordpress_id: 9
 author_login: admin
-layout: default
+layout: page
 comments: []
 
 author: Martin Lowinski

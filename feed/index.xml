@@ -5,21 +5,21 @@ layout: null
 <feed xmlns="http://www.w3.org/2005/Atom">
  
  <title>halfthetruth.de</title>
- <link href="http://halfthetruth.de/feed/" rel="self" />
- <link href="http://halfthetruth.de/" />
+ <link href="https://halfthetruth.de/feed/" rel="self" />
+ <link href="https://halfthetruth.de/" />
  <updated>{{ site.time | date_to_xmlschema }}</updated>
  <id>http://halfthetruth.de/</id>
  <author>
    <name>Martin Lowinski</name>
-   <email>martin@goldtopf.org</email>
+   <email>mail@martinlowinski.de</email>
  </author>
 
  {% for post in site.posts %}
  <entry>
    <title>{{ post.title | xml_escape }}</title>
-   <link href="http://halfthetruth.de{{ post.url }}"/>
+   <link href="https://halfthetruth.de{{ post.url }}"/>
    <updated>{{ post.date | date_to_xmlschema }}</updated>
-   <id>http://halfthetruth.de{{ post.id }}</id>
+   <id>https://halfthetruth.de{{ post.id }}</id>
    <content type="html">{{ post.content | xml_escape }}</content>
  </entry>
  {% endfor %}

@@ -7,6 +7,7 @@ author: martinlowinski
 comments: true
 published: true
 categories: 
+background: "/images/2013-08-20-timecapsule-for-linux-fans.jpg"
 tags: 
   - mac
   - backup
@@ -16,10 +17,6 @@ tags:
   - netatalk
 ---
 
-{% image 2013-08-20-timecapsule-for-linux-fans.jpg %}
-  title: timecapsule-linux
-  alt: TimeCapsule for Linux fans
-{% endimage %}
 
 _"Back up your data before you continue!"_ Almost every tutorial where you mess with your data starts with it. And the question is always how? For all the OSX' users out there, there is TimeMachine. It is an incremental back-up mechanism that is needly integrated into the OS. Backing up is done hourly and restoring data is easy (from a very fancy GUI). OSX supports the TimeCapsule, external harddrives and some [NAS](abbr:Network Attached Storage) as backup location. These NAS are typically Linux-based and run some sort of [netatalk](http://netatalk.sourceforge.net/), the open-source implementation of the AppleTalk protocol. I have a Netgear NAS running netatalk at home but had the problem that when I'm on the road, I can't access the data (since I don't want to drill a hole into my router's firewall).
 

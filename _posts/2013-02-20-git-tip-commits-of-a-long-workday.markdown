@@ -7,14 +7,11 @@ author: martinlowinski
 comments: true
 published: true
 categories: work
+background: "/images/2013-02-20-git-tip-commits-of-a-long-workday.jpg"
 tags:
   - git
 ---
 
-{% image 2013-02-20-git-tip-commits-of-a-long-workday.jpg %}
-  title: Foobar
-  alt: Something descriptive
-{% endimage %}
 
 This is just a small tip for all git users out there. Usually, after a long workday, you want to briefly review the day before you leave the office. And who could tell you what you've done today better than git? It is a common practise to make small commits and commit often, which helps a lot in that case. With this config option (`~/.gitconfig`) you can simply run `git today` and get a nice and colorful list of the commits from today.. and than call it a day.
 
