@@ -3,3 +3,7 @@ _site
 
 # CSS is generated from Sass
 css
+
+# vim
+.*.swp
+.*.swp
