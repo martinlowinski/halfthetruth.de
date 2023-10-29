@@ -21,7 +21,7 @@ status: publish
 
 Diese Seite wird herausgegeben und betrieben von Martin Lowinski, erreichbar unter
 
-Birkenweg 6<br/>
-85386 Eching
+Zinzendorfstr. 24<br/>
+70825 Korntal-Münchingen
 
-[martin [at] goldtopf [dot] org](mailto:martin%20%5Bat%5D%20goldtopf%20%5Bdot%5D%20org)
+[mail [at] martinlowinski [dot] de](mailto:mail%20%5Bat%5D%20martinlowinski%20%5Bdot%5D%20de)
