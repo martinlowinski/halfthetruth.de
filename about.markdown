@@ -21,7 +21,7 @@ status: publish
 
 My name is <a href="https://martinlowinski.de">Martin Lowinski</a> and I'm an entrepreneur in the greentech space.
 
-This is my personal blog about basically everything I'm interested in and is worthy to spend some words about. Topics can vary from computer science to leadership lessons learned or my experiences from the last holiday trip. So just in case you're more interested in a brief description of myself, take a look at my <a href="https://martinlowinski.de">vcard</a>.
+This is my personal blog about basically everything I'm interested in. Topics can vary from computer science to leadership lessons learned or my experiences from the last holiday trip.
 
 ## Contact Information ##
 
