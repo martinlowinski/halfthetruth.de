@@ -6,9 +6,6 @@ _site
 Gemfile.lock
 **/Gemfile.lock
 
-# CSS is generated from Sass
-css
-
 # vim
 .*.swp
 .*.swp
