@@ -1,16 +1,13 @@
-baseurl: "/"
-permalink: pretty
 title: "halfthetruth.de"
+description: "Martin Lowinski's personal blog"
+baseurl: "/"
+author: Martin Lowinski
+url: "https://halfthetruth.de"
+
+permalink: pretty
 collections_dir: collections
 markdown: kramdown
 highlighter: rouge
-
-sass:
-  indentWidth: 4
-  style: compact
-  precision: 10
-
-google_analytics_id: false # replace with "UA-XXXX"
 
 logo:
   logo_desktop_text: "halfthetruth.de"
@@ -19,7 +16,6 @@ logo:
 seo:
   meta_twitter_site: "@molowinski"
   meta_twitter_creator: "@molowinski"
-  meta_og_image: "https://www.zerostatic.io/theme/jekyll-atlantic/jekyll-atlantic-screenshot.png"
 
 plugins:
   - jekyll-environment-variables
