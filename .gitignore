@@ -1,5 +1,10 @@
 # Jekyll generated site
 _site
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+Gemfile.lock
+**/Gemfile.lock
 
 # CSS is generated from Sass
 css
@@ -7,3 +12,7 @@ css
 # vim
 .*.swp
 .*.swp
+
+# NPM
+node_modules/
+npm-debug.log

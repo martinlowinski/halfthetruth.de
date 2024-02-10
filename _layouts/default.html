@@ -1,21 +1,21 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
-{% include head.html %}
-
-<body>
-
-  {% include navbar.html %}
-
-  {{ content }}
-
-  {% include footer.html %}
-
-  {% include scripts.html %}
-
-  {% include google-analytics.html %}
-
-</body>
-
+  <head>
+    <meta charset="utf-8">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    {% include meta.html %}
+    <link rel="icon" href="{{ '/favicon.png' | relative_url }}">
+    <link href="{{ '/assets/css/style.css' | relative_url }}" rel="stylesheet">
+    {% include detect-theme.html %}
+  </head>
+  <body class="bg-white text-black antialiased dark:bg-gray-900 dark:text-white">
+    <div class="mx-auto max-w-3xl px-4 sm:px-6 xl:max-w-5xl xl:px-0">
+      {% include header.html %}
+      {{ content }}
+      {% include footer.html %}
+    </div>
+    {% include darkmode.html %}
+    {% include google-analytics.html %}
+  </body>
 </html>

@@ -3,6 +3,7 @@ layout: post
 title: "Monitoring energy data with the Powerfox Exporter"
 slug: powerfox-exporter
 subtitle: Introducing an exporter for the Powerfox energy data to track and visualize your consumptions in real-time.
+description: Introducing an exporter for the Powerfox energy data to track and visualize your consumptions in real-time.
 date: 2024-02-07 12:59 +0100
 author: martinlowinski
 comments: true
