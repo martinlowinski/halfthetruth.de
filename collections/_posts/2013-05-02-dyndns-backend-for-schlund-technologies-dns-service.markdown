@@ -3,6 +3,7 @@ layout: post
 title: "DynDNS backend for Schlund-Technologies DNS service"
 slug: dyndns-backend-for-schlund-technologies-dns-service
 date: 2013-05-02 19:10
+description: Introducing an open-source script to update dynamic DNS records at Schlund Technologies written in PHP.
 author: martinlowinski
 comments: true
 published: true

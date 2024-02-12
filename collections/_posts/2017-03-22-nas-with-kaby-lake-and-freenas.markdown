@@ -3,6 +3,7 @@ layout: post
 title: "NAS with Kaby Lake and FreeNAS"
 slug: nas-with-kaby-lake-and-freenas
 date: 2017-03-22 18:12
+description: Instructions for a FreeNAS server built on Intel's Kaby Lake platform with full ZFS support.
 author: martinlowinski
 comments: true
 published: true

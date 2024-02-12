@@ -3,6 +3,7 @@ layout: post
 title: "Docker: Move to new data-root"
 slug: docker-move-data-root
 date: 2023-12-11 19:08
+description: Docker reliably encapsulates configuration, data and other files. But as soon as you start running services like databases or even common monitoring concepts, the underlying storage layer may become a bottleneck. However, moving all docker-related data to a new location is more than just a `mv` command.
 author: martinlowinski
 comments: true
 published: true
