@@ -6,6 +6,7 @@ subtitle: Introducing an exporter for the Powerfox energy data to track and visu
 description: Introducing an exporter for the Powerfox energy data to track and visualize your consumptions in real-time.
 date: 2024-02-07 12:59 +0100
 author: martinlowinski
+background: "/images/2024-02-07-powerfox-exporter.png"
 comments: true
 published: true
 ---
