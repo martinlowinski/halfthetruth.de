@@ -6,7 +6,7 @@
 @import "tailwindcss/utilities";
 
 @import "assets/css/custom.css";
-@import "assets/css/syntax/monokai";
+@import "assets/css/syntax/github.css";
 
 @layer components {
   .heading {
@@ -27,4 +27,8 @@
       }
     }
   }
+}
+
+pre.highlight {
+  background-color: transparent;
 }
