@@ -38,7 +38,7 @@ mv /var/lib/docker /var/lib/docker.old
 
 It's time to change the configuration of docker to point to the new location. Edit `/etc/docker/daemon.json` as follows:
 
-{% highlight conf linenos %}
+{% highlight conf %}
 {
     "data-root": "/new/path/docker"
 }
