@@ -81,32 +81,32 @@ that is why there are lots of wrapper-scripts available on the internet. We want
 duply is not in the debian repositories we have to install it by hand. Grab a copy from <a href="http://duply.net">
   duply.net
 </a>
-, unpack it and move it to a location you like (as long as it is available in your PATH): ```bash
-wget http://sourceforge.net/projects/ftplicity/ tar -xvf duply_*.tgz cp duply_*/duply ~/bin/duply
-``` Next step is the configuration of the two. To create the folder-structure and the configuration
-files for duply, simply run: ```bashi mkdir -p /etc/duply duply s3backup create ``` This will create
-a directory either in ~/.duply/ (as user) or in /etc/duply (as root) with a default conf-file. We
-can now edit the configuration to fit our needs: ```bash GPG_KEY='12345678'
-GPG_PW='averylongpassword' TARGET='s3+http://[user:password]@bucket_name[/prefix]' SOURCE='/'
-MAX_FULLBKP_AGE=1M DUPL_PARAMS="$DUPL_PARAMS --full-if-older-than $MAX_FULLBKP_AGE" VOLSIZE=100
-DUPL_PARAMS="$DUPL_PARAMS --volsize $VOLSIZE" DUPL_PARAMS="$DUPL_PARAMS --s3-use-new-style
---s3-european-buckets" ``` With line one and two we specifiy the gnupg-key and passphrase to encrypt
-the archives. The passphrase is saved in plaintext, but you can read the file only with root
-privileges. If this is to unsecure for you, the FAQ of GnuPG describes another way to use your <a href="http://www.gnupg.org/faq/GnuPG-FAQ.html#how-can-i-use-gnupg-in-an-automated-environment">
+, unpack it and move it to a location you like (as long as it is available in your PATH): ```bash wget
+http://sourceforge.net/projects/ftplicity/ tar -xvf duply_*.tgz cp duply_*/duply ~/bin/duply ``` Next
+step is the configuration of the two. To create the folder-structure and the configuration files for
+duply, simply run: ```bashi mkdir -p /etc/duply duply s3backup create ``` This will create a directory
+either in ~/.duply/ (as user) or in /etc/duply (as root) with a default conf-file. We can now edit the
+configuration to fit our needs: ```bash GPG_KEY='12345678' GPG_PW='averylongpassword' TARGET='s3+http://[user:password]@bucket_name[/prefix]'
+SOURCE='/' MAX_FULLBKP_AGE=1M DUPL_PARAMS="$DUPL_PARAMS --full-if-older-than $MAX_FULLBKP_AGE" VOLSIZE=100
+DUPL_PARAMS="$DUPL_PARAMS --volsize $VOLSIZE" DUPL_PARAMS="$DUPL_PARAMS --s3-use-new-style --s3-european-buckets"
+``` With line one and two we specifiy the gnupg-key and passphrase to encrypt the archives. The passphrase
+is saved in plaintext, but you can read the file only with root privileges. If this is to unsecure for
+you, the FAQ of GnuPG describes another way to use your <a href="http://www.gnupg.org/faq/GnuPG-FAQ.html#how-can-i-use-gnupg-in-an-automated-environment">
   gpg-key in an automated environment
-</a>. Line 3 specifies that we want to use Amazons S3 service over HTTPS (despites the url says http).
+</a>
+. Line 3 specifies that we want to use Amazons S3 service over HTTPS (despites the url says http).
 You get your username and password from your <a href="http://aws.amazon.com/account/">
   AWS account
-</a> known as the Access Key ID and the Secret Access Key. The bucket-name is an unique identifier throughout
-S3 and you cannot change it, so choose wisely. Than we have to select the source, which I set to '/'
-and means backup everything under root (more on that later). The next two variables say that duplicity
-should create a full backup every month and by default remove all prior backups except one (you can change
-that by setting MAX_AGE and MAX_FULL_BACKUPS). With the variable volsize you can set the size of each
-chunk (default is 25 MByte). This is important because S3 doesn't allow files bigger than 5 GByte. If
-you set it to a small value, duplicity will create a huge bunch of files but this could speed up restoring.
-On the other hand a large number could save some time during the backup process. Finally, we have to
-add the params '--s3-use-new-style --s3-european-buckets' to tell S3 that I want to store my files in
-the European region (Ireland).
+</a> known as the Access Key ID and the Secret Access Key. The bucket-name is an unique identifier
+throughout S3 and you cannot change it, so choose wisely. Than we have to select the source, which I
+set to '/' and means backup everything under root (more on that later). The next two variables say
+that duplicity should create a full backup every month and by default remove all prior backups
+except one (you can change that by setting MAX_AGE and MAX_FULL_BACKUPS). With the variable volsize
+you can set the size of each chunk (default is 25 MByte). This is important because S3 doesn't allow
+files bigger than 5 GByte. If you set it to a small value, duplicity will create a huge bunch of
+files but this could speed up restoring. On the other hand a large number could save some time
+during the backup process. Finally, we have to add the params '--s3-use-new-style
+--s3-european-buckets' to tell S3 that I want to store my files in the European region (Ireland).
 
 Now back to the data we want to backup. The file /etc/duply/s3backup/exclude (you have to create that file by hand) is the exclude global globbing filelist. You can specifiy with - (minus) what to exclude and with + (plus) what to include. By default, everything under SOURCE is included. For more information on the syntax, read the <a href="http://duplicity.nongnu.org/duplicity.1.html#toc9">manpage</a>. You can also put some commands for preparation, like dumping a database to file etc. in /etc/duply/s3backup/pre. Likewise, /etc/duply/s3backup/post is for doing some work after the backup, like send a mail to the admin.
 
