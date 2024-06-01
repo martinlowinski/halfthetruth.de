@@ -1,0 +1,29 @@
+---
+layout: PostSimple
+title: 'Git tip: commits of a long workday'
+slug: git-tip-commits-of-a-long-workday
+date: '2013-02-20'
+author: martinlowinski
+comments: true
+published: true
+categories: work
+background: /images/2013-02-20-git-tip-commits-of-a-long-workday.jpg
+tags:
+  - git
+disqusId: /2013/02/20/git-tip-commits-of-a-long-workday
+jekyllPath: /2013-02-20-git-tip-commits-of-a-long-workday
+---
+
+This is just a small tip for all git users out there. Usually, after a long workday, you want to briefly review the day before you leave the office. And who could tell you what you've done today better than git? It is a common practise to make small commits and commit often, which helps a lot in that case. With this config option (`~/.gitconfig`) you can simply run `git today` and get a nice and colorful list of the commits from today.. and than call it a day.
+
+```bash
+[alias]
+  today = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --after="yesterday" --abbrev-commit --
+```
+
+Update: It also includes commits that occured _after_ yesterday. An improved variant for this kind of scenario would be the following:
+
+```bash
+[alias]
+  today = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --since="6am" --abbrev-commit --
+```
