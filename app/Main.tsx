@@ -11,13 +11,13 @@ export default function Home({ posts }) {
     <>
       <div className="space-y-2 pb-8 pt-6 md:space-y-5">
         <h1 className="text-4xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:leading-10 md:leading-14">
-          Hey, I'm
+          Hey, I'm{' '}
           <a
             className="hover-underline-animation text-accent"
             href="https://martinlowinski.de"
             target="_blank"
           >
-            Martin
+            Martin{' '}
           </a>
           <span className="wave" role="img" aria-label="Hello">
             👋🏻
