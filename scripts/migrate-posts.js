@@ -12,7 +12,7 @@ const yaml = require('js-yaml')
 const log = (...args) => console.log(...args)
 
 const DESTINATION_DIR = path.join(__dirname, '../data/blog')
-const POST_URL = '/posts'
+const POST_URL = '/blog'
 const REDIRECTS_FILE_NAME = '_redirects'
 
 const dateRe = /(\w{4})-(\w{2})-(\w{2})-/
