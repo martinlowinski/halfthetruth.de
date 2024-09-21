@@ -33,6 +33,7 @@ module.exports = {
           css: {
             a: {
               color: theme('colors.primary.500'),
+              textDecoration: 'none',
               '&:hover': {
                 color: `${theme('colors.primary.600')}`,
               },
