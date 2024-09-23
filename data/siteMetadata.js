@@ -13,7 +13,7 @@ const siteMetadata = {
   mastodon: 'https://troet.cafe/@molowinski',
   email: 'mail@martinlowinski.de',
   github: 'https://github.com/martinlowinski',
-  x: 'https://twitter.com/molowinski',
+  // x: 'https://twitter.com/molowinski',
   // twitter: 'https://twitter.com/Twitter',
   // facebook: 'https://facebook.com',
   // youtube: 'https://youtube.com',
