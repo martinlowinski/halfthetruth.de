@@ -73,6 +73,15 @@ module.exports = () => {
         },
       ],
     },
+    async redirects() {
+      return [
+        {
+          source: '/:year(\\d{4})/:month(\\d{2})/:day(\\d{2})/:slug/',
+          destination: '/blog/:slug/',
+          permanent: false,
+        },
+      ]
+    },
     async headers() {
       return [
         {
