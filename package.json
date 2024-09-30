@@ -14,8 +14,8 @@
   "dependencies": {
     "@headlessui/react": "1.7.19",
     "@next/bundle-analyzer": "14.2.13",
-    "@tailwindcss/forms": "^0.5.7",
-    "@tailwindcss/typography": "^0.5.12",
+    "@tailwindcss/forms": "^0.5.9",
+    "@tailwindcss/typography": "^0.5.15",
     "autoprefixer": "^10.4.20",
     "contentlayer2": "0.4.6",
     "esbuild": "0.20.2",
@@ -26,7 +26,7 @@
     "next": "14.2.13",
     "next-contentlayer2": "0.4.6",
     "next-themes": "^0.3.0",
-    "pliny": "0.2.1",
+    "pliny": "0.3.1",
     "postcss": "^8.4.47",
     "react": "18.3.1",
     "react-dom": "18.3.1",
@@ -57,7 +57,7 @@
     "husky": "^9.1.6",
     "lint-staged": "^13.0.0",
     "prettier": "^3.3.3",
-    "prettier-plugin-tailwindcss": "^0.5.11",
+    "prettier-plugin-tailwindcss": "^0.6.8",
     "typescript": "^5.6.2"
   },
   "lint-staged": {
