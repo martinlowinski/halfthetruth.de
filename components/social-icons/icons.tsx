@@ -17,11 +17,11 @@ export function Github(svgProps: SVGProps<SVGSVGElement>) {
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 24 24"
-      stroke-width="2.0"
+      strokeWidth="2.0"
       stroke="currentColor"
       fill="none"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeLinecap="round"
+      strokeLinejoin="round"
       {...svgProps}
     >
       <title>Github</title>
@@ -36,11 +36,11 @@ export function Linkedin(svgProps: SVGProps<SVGSVGElement>) {
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 24 24"
-      stroke-width="2.0"
+      strokeWidth="2.0"
       stroke="currentColor"
       fill="none"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeLinecap="round"
+      strokeLinejoin="round"
       {...svgProps}
     >
       <title>Linkedin</title>
@@ -59,11 +59,11 @@ export function Mail(svgProps: SVGProps<SVGSVGElement>) {
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 24 24"
-      stroke-width="2.0"
+      strokeWidth="2.0"
       stroke="currentColor"
       fill="none"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeLinecap="round"
+      strokeLinejoin="round"
       {...svgProps}
     >
       <title>Mail</title>
@@ -79,11 +79,11 @@ export function Twitter(svgProps: SVGProps<SVGSVGElement>) {
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 24 24"
-      stroke-width="2.0"
+      strokeWidth="2.0"
       stroke="currentColor"
       fill="none"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeLinecap="round"
+      strokeLinejoin="round"
       {...svgProps}
     >
       <title>Twitter</title>
@@ -98,11 +98,11 @@ export function X(svgProps: SVGProps<SVGSVGElement>) {
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 24 24"
-      stroke-width="2.0"
+      strokeWidth="2.0"
       stroke="currentColor"
       fill="none"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeLinecap="round"
+      strokeLinejoin="round"
       {...svgProps}
     >
       <title>X</title>
@@ -127,11 +127,11 @@ export function Mastodon(svgProps: SVGProps<SVGSVGElement>) {
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 24 24"
-      stroke-width="2.0"
+      strokeWidth="2.0"
       stroke="currentColor"
       fill="none"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeLinecap="round"
+      strokeLinejoin="round"
       {...svgProps}
     >
       <title>Mastodon</title>
@@ -165,11 +165,11 @@ export function RSS(svgProps: SVGProps<SVGSVGElement>) {
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 24 24"
-      stroke-width="2.0"
+      strokeWidth="2.0"
       stroke="currentColor"
       fill="none"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeLinecap="round"
+      strokeLinejoin="round"
       {...svgProps}
     >
       <title>RSS</title>
@@ -186,11 +186,11 @@ export function Buymeacoffee(svgProps: SVGProps<SVGSVGElement>) {
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 24 24"
-      stroke-width="2.0"
+      strokeWidth="2.0"
       stroke="currentColor"
       fill="none"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeLinecap="round"
+      strokeLinejoin="round"
       {...svgProps}
     >
       <title>Buy me a coffee</title>
