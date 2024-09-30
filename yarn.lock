@@ -3296,13 +3296,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:^18.3.8":
-  version: 18.3.8
-  resolution: "@types/react@npm:18.3.8"
+"@types/react@npm:^18.3.10":
+  version: 18.3.10
+  resolution: "@types/react@npm:18.3.10"
   dependencies:
     "@types/prop-types": "*"
     csstype: ^3.0.2
-  checksum: a2cc2034746cde564a49a9d7f1ae57214bc83adb0daafd4724dc400569adc54c5a489c0e7d8656752b8748908a364d6811e4d7a2adc7f18a7f7179728d20147a
+  checksum: 04261654b5f4bc9584e9d882c7dfd5b36dc58963f958f8c3efd24cb68c9d205bc2d57558a1479b86d7827f0e5116d5bd111791d1253583d1e1c165f0aeb48c48
   languageName: node
   linkType: hard
 
@@ -9669,9 +9669,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"rehype-citation@npm:^2.1.1":
-  version: 2.1.1
-  resolution: "rehype-citation@npm:2.1.1"
+"rehype-citation@npm:^2.1.2":
+  version: 2.1.2
+  resolution: "rehype-citation@npm:2.1.2"
   dependencies:
     "@citation-js/core": ^0.7.14
     "@citation-js/date": ^0.5.1
@@ -9687,7 +9687,7 @@ __metadata:
     parse5: ^7.1.2
     unified: ^11.0.0
     unist-util-visit: ^5.0.0
-  checksum: 7904f15a1eca4c463c778876bfbf88485b57481d8c40f01d9aa9093d1c18570e23be4523e503e8947a57308f7dd4d5d5b2bf298dddfeb6b82055438cfa61213d
+  checksum: 0805ffb7ae99298af44fc1e1938ec07d53cc7a7eb546eb424cda49b1373cb681f2c6d95e3b1119f844e4024b53004d27b336feccbd5e7392b06ecc94d2cde727
   languageName: node
   linkType: hard
 
@@ -9885,9 +9885,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"rehype-preset-minify@npm:7.0.0":
-  version: 7.0.0
-  resolution: "rehype-preset-minify@npm:7.0.0"
+"rehype-preset-minify@npm:7.0.1":
+  version: 7.0.1
+  resolution: "rehype-preset-minify@npm:7.0.1"
   dependencies:
     rehype-minify-attribute-whitespace: ^4.0.0
     rehype-minify-css-style: ^4.0.0
@@ -9913,7 +9913,7 @@ __metadata:
     rehype-sort-attribute-values: ^5.0.0
     rehype-sort-attributes: ^5.0.0
     unified: ^11.0.0
-  checksum: bf323da70f00ef6b2449e601dd4a433dc20f32b7e9a796fee31e5aa4698a1122ca84740a21af4db7e59e3a97b8f86cf4a6e53cd34232f12dc16e9f4bdc554d93
+  checksum: 04e3618b90f8a592270b6277edab56a6ff142d79c225db3c10ec273cd9108d26ddb6dc62f06f4f76a269105cbcebe6a3dfd36074495312152e92fa41ef3120b5
   languageName: node
   linkType: hard
 
@@ -10921,7 +10921,7 @@ __metadata:
     "@tailwindcss/forms": ^0.5.7
     "@tailwindcss/typography": ^0.5.12
     "@types/mdx": ^2.0.13
-    "@types/react": ^18.3.8
+    "@types/react": ^18.3.10
     "@typescript-eslint/eslint-plugin": ^6.1.0
     "@typescript-eslint/parser": ^6.1.0
     autoprefixer: ^10.4.20
@@ -10949,21 +10949,21 @@ __metadata:
     react-dom: 18.3.1
     reading-time: 1.5.0
     rehype-autolink-headings: ^7.1.0
-    rehype-citation: ^2.1.1
+    rehype-citation: ^2.1.2
     rehype-katex: ^7.0.1
-    rehype-preset-minify: 7.0.0
+    rehype-preset-minify: 7.0.1
     rehype-prism-plus: ^2.0.0
     rehype-slug: ^6.0.0
     remark: ^15.0.1
     remark-gfm: ^4.0.0
     remark-math: ^6.0.0
-    tailwindcss: ^3.4.12
+    tailwindcss: ^3.4.13
     typescript: ^5.6.2
     unist-util-visit: ^5.0.0
   languageName: unknown
   linkType: soft
 
-"tailwindcss@npm:^3.4.12":
+"tailwindcss@npm:^3.4.13":
   version: 3.4.13
   resolution: "tailwindcss@npm:3.4.13"
   dependencies:
