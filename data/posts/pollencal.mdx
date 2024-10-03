@@ -24,6 +24,10 @@ jekyllPath: /2024-05-17-pollencal
 
 Der Pollenflug hat seit 1998 weltweit um 96,3 % zugenommen. An 17 Orten der nördlichen Hemisphäre wurde ein dramatischer Anstieg der Pollen in der Luft festgestellt. 30 % der Weltbevölkerung leiden an allergischer Rhinitis (aka. Heuschnupfen). Leider ist der Pollenflug stark jahreszeitlich, arten- und wetterabhängig und hängt von vielen lokalen Faktoren ab. Dieser Dynamik versuchen zahlreiche Webseiten und Apps von Wetterportalen oder Pharmaunternehmen mit aktuellen Pollenflugdaten und -prognosen Rechnung zu tragen.
 
+<div class="flex place-content-center xl:float-right xl:ml-10">
+  ![Grafana Dashboard of the powerfox exporter](/static/images/2024-05-17-pollencal.png)
+</div>
+
 In meiner täglichen Routine möchte ich jedoch nicht noch eine weitere App nutzen oder mich regelmäßig auf Webseiten über den lokalen Pollenflug informieren müssen. Es gibt Wochentage, an denen ich viel unterwegs bin und somit Pollen ausgesetzt bin. An anderen Tagen sitze ich in einem klimatisierten Büro mit gefilterter Luft. Dreh- und Angelpunkt ist dabei mein Kalender mit allen privaten und beruflichen Terminen. Hier sehe ich, wann ich wo bin und wie stark ich den Pollen ausgesetzt sein werde. Doch genau hier fehlt eine wichtige Information: Wie stark wird die Pollenbelastung an diesem Tag und an diesem Ort sein?
 
 Deshalb habe ich [pollencal.com](https://pollencal.com) auf Basis der Google Maps Platform entwickelt. Ein Kalender-Abo, das mit Hilfe von Emojis die Pollenbelastung für bestimmte Pollenarten für bis zu 5 Tage vorhersagt. Jedes Kalender-Abonnement ist individuell auf den Ort und die Pollenart zugeschnitten und funktioniert mit allen Kalendern, die .ics und Emojis unterstützen, wie Google Calender, Apple Calendar, Outlook und viele mehr. Die Funktionen:
