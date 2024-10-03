@@ -80,6 +80,11 @@ module.exports = () => {
           destination: '/posts/:slug',
           permanent: false,
         },
+        {
+          source: '/:year(\\d{4})/:month(\\d{2})/:day(\\d{2})/:slug',
+          destination: '/posts/:slug',
+          permanent: false,
+        },
       ]
     },
     async headers() {
