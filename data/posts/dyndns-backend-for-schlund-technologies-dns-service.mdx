@@ -1,0 +1,28 @@
+---
+layout: PostSimple
+title: DynDNS backend for Schlund-Technologies DNS service
+slug: dyndns-backend-for-schlund-technologies-dns-service
+date: '2013-05-02'
+summary: >-
+  Introducing an open-source script to update dynamic DNS records at Schlund
+  Technologies written in PHP.
+author: martinlowinski
+comments: true
+published: true
+categories: null
+tags:
+  - dns
+  - schlundtech
+  - dyndns
+  - php
+disqusId: /2013/05/02/dyndns-backend-for-schlund-technologies-dns-service
+jekyllPath: /2013-05-02-dyndns-backend-for-schlund-technologies-dns-service
+---
+
+Many of us Computer Scientists know the situation where you're asked to fix some pc, mac or application issue with the argument "you studied that, right?". With physical access to the machine it is then the best chance to fix whatever is wrong. But often, you're on the road, somewhere at a conference or you just don't want to drive 100km to repair yet another windows-installation.
+
+This is where the remote desktop like VNC, TeamViewer and other really helpful tools come into place. TeamViewer is a big player and a great tool, but their policy allows eavesdropping. VNC and other remote desktop tools that are usually bundled with the operating-system don't force something like that. The problem with them is that they don't use secure connections by default and you would have to drill a whole into your router's firewall.
+
+The newer FRITZBox routers from AVM fortunately support VPN over IPSec, which is a really great addition. A VPN over IPSec is considered secure and you don't have to touch the firewall. To get it working you need some sort of DynDNS service (in case you have a dial-up connection). Most of these services do monthly requests where you have to prove that you are the owner of that domain and allowed to change the IP. My DNS provider is [Schlund Technologies](http://www.schlundtech.com/) and provides, besides the usual web-access, an XML-Gateway to manage your domains and DNS settings. The goal is now to enable the router to talk to the XML-Gateway and to update the A-record of a certain subdomain every time it gets a new IP address.
+
+As I can't modify the firmware of the router or the API of SchlundTech, I wrote a small PHP script that does the talking between them. The router just sends its new IP address to the script (running on a webserver) and it will be translated to a valid request (with credentials) and sent to the XML-Gateway. I've created a [repository on GitHub](https://github.com/martinlowinski/php-dyndns) together with the documentation on how it works in detail and how you can install it. Patches and forks are of course always welcome.
