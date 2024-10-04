@@ -2,6 +2,7 @@
 const siteMetadata = {
   title: 'halfthetruth.de',
   author: 'Martin Lowinski',
+  authorUrl: 'https://martinlowinski.de',
   headerTitle: 'halfthetruth.de',
   description: "Martin Lowinski's personal blog",
   language: 'en-us',
