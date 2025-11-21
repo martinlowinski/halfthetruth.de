@@ -1,4 +1,8 @@
 {
+  "startup": 1,
+  "role-based-organisation": 1,
+  "agile": 1,
+  "self-management": 1,
   "pollen": 1,
   "calendar": 1,
   "prometheus": 1,
